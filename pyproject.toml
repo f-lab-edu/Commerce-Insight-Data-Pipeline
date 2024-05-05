@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "commerce-insight-data-pipeline"
+version = "0.1.0"
+description = ""
+authors = ["Haerin Kim <lini1634@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+requests = "^2.31.0"
+beautifulsoup4 = "^4.12.3"
+flask = "^3.0.3"
+black = "^24.4.2"
+flask-wtf = "^1.2.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
