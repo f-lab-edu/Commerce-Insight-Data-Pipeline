@@ -1,0 +1,17 @@
+version: '3'
+services:
+  cidp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    # command: poetry run python app/main.py
+    container_name: cidp
+    ports:
+      - "5000:5000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
