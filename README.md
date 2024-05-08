@@ -12,7 +12,7 @@
 git clone https://github.com/f-lab-edu/Commerce-Insight-Data-Pipeline.git
 docker-compose up -d
 ```
-* 호스트에서 http://localhost:5000/test 접속 시 "hi" 반환
+* 호스트에서 http://localhost:500/amazon/best_sellers 접속 시 log 폴더 내부에 amazon_product.log 생성
 
 ### 데이터 생성 
 웹 크롤러 API를 개발
