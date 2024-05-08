@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./app:/app
+      - ./log:/log
     # command: poetry run python app/main.py
     container_name: cidp
     ports:
