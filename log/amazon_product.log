@@ -1,0 +1,1077 @@
+2024-05-12 14:33:59,876 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:00,244 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers/zgbs HTTP/1.1" 429 None
+2024-05-12 14:34:00,245 - DEBUG - url: https://www.amazon.com/Best-Sellers/zgbs
+2024-05-12 14:34:00,246 - DEBUG - status code: 429
+2024-05-12 14:34:01,247 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:01,579 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers/zgbs HTTP/1.1" 429 None
+2024-05-12 14:34:01,580 - DEBUG - url: https://www.amazon.com/Best-Sellers/zgbs
+2024-05-12 14:34:01,581 - DEBUG - status code: 429
+2024-05-12 14:34:02,582 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:03,268 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers/zgbs HTTP/1.1" 200 None
+2024-05-12 14:34:03,942 - DEBUG - url: https://www.amazon.com/Best-Sellers/zgbs
+2024-05-12 14:34:03,943 - DEBUG - status code: 200
+2024-05-12 14:34:03,980 - INFO - best seller url: url
+2024-05-12 14:34:03,982 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:04,268 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_amazon-devices_0 HTTP/1.1" 429 None
+2024-05-12 14:34:04,269 - DEBUG - url: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_amazon-devices_0
+2024-05-12 14:34:04,270 - DEBUG - status code: 429
+2024-05-12 14:34:05,271 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:05,837 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_amazon-devices_0 HTTP/1.1" 200 None
+2024-05-12 14:34:06,251 - DEBUG - url: https://www.amazon.com/Best-Sellers-Amazon-Devices-Accessories/zgbs/amazon-devices/ref=zg_bs_nav_amazon-devices_0
+2024-05-12 14:34:06,252 - DEBUG - status code: 200
+2024-05-12 14:34:06,288 - INFO - 상품명: Amazon Echo Pop | Compact smart speaker with Alexa | premium Alexa features available for purchase | Charcoal
+2024-05-12 14:34:06,289 - INFO - 가격: $19.99
+2024-05-12 14:34:06,289 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,289 - INFO - 리뷰 수: 44,163
+2024-05-12 14:34:06,290 - INFO - 상품명: All-new Amazon Fire TV Stick 4K streaming device, more than 1.5 million movies and TV episodes, supports Wi-Fi 6, watch free & live TV
+2024-05-12 14:34:06,290 - INFO - 가격: $29.99
+2024-05-12 14:34:06,291 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,292 - INFO - 리뷰 수: 26,414
+2024-05-12 14:34:06,293 - INFO - 상품명: Echo Dot (5th Gen, 2022 release) | With bigger vibrant sound, helpful routines and Alexa | Charcoal
+2024-05-12 14:34:06,293 - INFO - 가격: $20.99
+2024-05-12 14:34:06,293 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,293 - INFO - 리뷰 수: 101,170
+2024-05-12 14:34:06,294 - INFO - 상품명: Amazon Fire TV Stick, HD, sharp picture quality, fast streaming, free & live TV, Alexa Voice Remote with TV controls
+2024-05-12 14:34:06,294 - INFO - 가격: $24.99
+2024-05-12 14:34:06,294 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,294 - INFO - 리뷰 수: 467,661
+2024-05-12 14:34:06,295 - INFO - 상품명: Amazon Kindle Paperwhite (16 GB) – Now with a larger display, adjustable warm light, increased battery life, and faster page turns – Black
+2024-05-12 14:34:06,295 - INFO - 가격: $114.99
+2024-05-12 14:34:06,295 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,295 - INFO - 리뷰 수: 54,396
+2024-05-12 14:34:06,296 - INFO - 상품명: All-new Amazon Fire TV Stick 4K Max streaming device, supports Wi-Fi 6E, free & live TV without cable or satellite
+2024-05-12 14:34:06,296 - INFO - 가격: $39.99
+2024-05-12 14:34:06,296 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,296 - INFO - 리뷰 수: 19,759
+2024-05-12 14:34:06,297 - INFO - 상품명: Blink Mini – Compact indoor plug-in smart security camera, 1080p HD video, night vision, motion detection, two-way audio, easy set up, Works with Alexa – 1 camera (White)
+2024-05-12 14:34:06,297 - INFO - 가격: $19.99
+2024-05-12 14:34:06,297 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:06,297 - INFO - 리뷰 수: 282,955
+2024-05-12 14:34:06,297 - INFO - 상품명: Amazon Kindle – The lightest and most compact Kindle, with extended battery life, adjustable front light, and 16 GB storage – Black
+2024-05-12 14:34:06,298 - INFO - 가격: $59.99
+2024-05-12 14:34:06,298 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,298 - INFO - 리뷰 수: 18,278
+2024-05-12 14:34:06,298 - INFO - 상품명: Amazon Kindle Paperwhite (16 GB) – Now with a larger display, adjustable warm light, increased battery life, and faster page turns – Agave Green
+2024-05-12 14:34:06,299 - INFO - 가격: $114.99
+2024-05-12 14:34:06,299 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,299 - INFO - 리뷰 수: 54,396
+2024-05-12 14:34:06,299 - INFO - 상품명: All-new Echo Show 8 (3rd Gen, 2023 release) | With Spatial Audio, Smart Home Hub, and Alexa | Glacier White
+2024-05-12 14:34:06,300 - INFO - 가격: $99.99
+2024-05-12 14:34:06,300 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,300 - INFO - 리뷰 수: 6,775
+2024-05-12 14:34:06,300 - INFO - 상품명: Blink Outdoor 4 (4th Gen) – Wire-free smart security camera, two-year battery life, two-way audio, HD live view, enhanced motion detection, Works with Alexa – 5 camera system
+2024-05-12 14:34:06,301 - INFO - 가격: $199.99
+2024-05-12 14:34:06,301 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:06,301 - INFO - 리뷰 수: 9,671
+2024-05-12 14:34:06,301 - INFO - 상품명: Amazon Kindle Paperwhite (16 GB) – Now with a larger display, adjustable warm light, increased battery life, and faster page turns – Denim
+2024-05-12 14:34:06,302 - INFO - 가격: $114.99
+2024-05-12 14:34:06,302 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,302 - INFO - 리뷰 수: 54,396
+2024-05-12 14:34:06,302 - INFO - 상품명: Blink Video Doorbell | Two-way audio, HD video, motion and chime app alerts and Alexa enabled — wired or wire-free (Black)
+2024-05-12 14:34:06,303 - INFO - 가격: $59.99
+2024-05-12 14:34:06,303 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:06,303 - INFO - 리뷰 수: 138,575
+2024-05-12 14:34:06,304 - INFO - 상품명: Echo Show 5 (3rd Gen, 2023 release) | Smart display with 2x the bass and clearer sound | Charcoal
+2024-05-12 14:34:06,304 - INFO - 가격: $57.19
+2024-05-12 14:34:06,304 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:06,304 - INFO - 리뷰 수: 27,836
+2024-05-12 14:34:06,304 - INFO - 상품명: Amazon Fire TV Stick Lite, free and live TV, Alexa Voice Remote Lite, smart home controls, HD streaming
+2024-05-12 14:34:06,305 - INFO - 가격: $19.99
+2024-05-12 14:34:06,305 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,305 - INFO - 리뷰 수: 62,803
+2024-05-12 14:34:06,306 - INFO - 상품명: Amazon 9W Official OEM USB Charger and Power Adapter for Fire Tablets, Kindle eReaders, and Echo Dot
+2024-05-12 14:34:06,306 - INFO - 가격: $19.99
+2024-05-12 14:34:06,306 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,307 - INFO - 리뷰 수: 13,311
+2024-05-12 14:34:06,307 - INFO - 상품명: Ring Rechargeable Quick Release Battery Pack
+2024-05-12 14:34:06,307 - INFO - 가격: $34.99
+2024-05-12 14:34:06,308 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,308 - INFO - 리뷰 수: 122,575
+2024-05-12 14:34:06,308 - INFO - 상품명: Ring Chime
+2024-05-12 14:34:06,308 - INFO - 가격: $34.99
+2024-05-12 14:34:06,309 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,309 - INFO - 리뷰 수: 34,803
+2024-05-12 14:34:06,309 - INFO - 상품명: Ring Indoor Cam (2nd Gen) | latest generation, 2023 release | 1080p HD Video & Color Night Vision, Two-Way Talk, and Manual Audio & Video Privacy Cover | White
+2024-05-12 14:34:06,309 - INFO - 가격: $36.29
+2024-05-12 14:34:06,310 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,310 - INFO - 리뷰 수: 15,168
+2024-05-12 14:34:06,310 - INFO - 상품명: Amazon Fire HD 8 tablet, 8” HD Display, 32 GB, 30% faster processor, designed for portable entertainment, (2022 release), Black
+2024-05-12 14:34:06,310 - INFO - 가격: $64.99
+2024-05-12 14:34:06,311 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:06,311 - INFO - 리뷰 수: 14,838
+2024-05-12 14:34:06,311 - INFO - 상품명: Amazon Kindle Paperwhite Signature Edition (32 GB) – With auto-adjusting front light, wireless charging, 6.8“ display, and up to 10 weeks of battery life – Without Lockscreen Ads – Black
+2024-05-12 14:34:06,311 - INFO - 가격: $149.99
+2024-05-12 14:34:06,312 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,312 - INFO - 리뷰 수: 26,021
+2024-05-12 14:34:06,312 - INFO - 상품명: All-new Amazon Fire HD 10 tablet, built for relaxation, 10.1" vibrant Full HD screen, octa-core processor, 3 GB RAM, latest model (2023 release), 32 GB, Black
+2024-05-12 14:34:06,312 - INFO - 가격: $94.99
+2024-05-12 14:34:06,313 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:06,313 - INFO - 리뷰 수: 7,255
+2024-05-12 14:34:06,313 - INFO - 상품명: Amazon Kindle – The lightest and most compact Kindle, with extended battery life, adjustable front light, and 16 GB storage – Denim
+2024-05-12 14:34:06,313 - INFO - 가격: $59.99
+2024-05-12 14:34:06,313 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,314 - INFO - 리뷰 수: 18,278
+2024-05-12 14:34:06,314 - INFO - 상품명: Amazon Fire 7 Kids tablet, ages 3-7. Top-selling 7" kids tablet on Amazon - 2022 | ad-free content with parental controls included, 10-hr battery, 16 GB, Blue
+2024-05-12 14:34:06,314 - INFO - 가격: $69.99
+2024-05-12 14:34:06,314 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:06,315 - INFO - 리뷰 수: 17,301
+2024-05-12 14:34:06,315 - INFO - 상품명: Amazon Alexa Voice Remote Pro, includes remote finder, TV controls, backlit buttons, requires compatible Fire TV device
+2024-05-12 14:34:06,315 - INFO - 가격: $27.05
+2024-05-12 14:34:06,315 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:06,316 - INFO - 리뷰 수: 13,423
+2024-05-12 14:34:06,316 - INFO - 상품명: Ring Stick Up Cam Battery | Weather-Resistant Outdoor Camera, Live View, Color Night Vision, Two-way Talk, Motion alerts, Works with Alexa | White
+2024-05-12 14:34:06,316 - INFO - 가격: $74.99
+2024-05-12 14:34:06,316 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,316 - INFO - 리뷰 수: 66,309
+2024-05-12 14:34:06,317 - INFO - 상품명: Echo (4th Gen) | With premium sound, smart home hub, and Alexa | Charcoal
+2024-05-12 14:34:06,317 - INFO - 가격: $64.99
+2024-05-12 14:34:06,317 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,317 - INFO - 리뷰 수: 145,202
+2024-05-12 14:34:06,318 - INFO - 상품명: INSIGNIA 32-inch Class F20 Series Smart HD 720p Fire TV with Alexa Voice Remote (NS-32F201NA23, 2022 Model)
+2024-05-12 14:34:06,318 - INFO - 가격: $89.99
+2024-05-12 14:34:06,318 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:06,318 - INFO - 리뷰 수: 18,913
+2024-05-12 14:34:06,319 - INFO - 상품명: Blink Add-On Sync Module 2
+2024-05-12 14:34:06,319 - INFO - 가격: $49.99
+2024-05-12 14:34:06,319 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:06,319 - INFO - 리뷰 수: 39,521
+2024-05-12 14:34:06,320 - INFO - 상품명: Ring Floodlight Cam Wired Plus with motion-activated 1080p HD video, White (2021 release)
+2024-05-12 14:34:06,320 - INFO - 가격: $127.83
+2024-05-12 14:34:06,320 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:06,320 - INFO - 리뷰 수: 34,715
+2024-05-12 14:34:06,321 - INFO - best seller url: url
+2024-05-12 14:34:06,321 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:06,650 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Amazon-Renewed/zgbs/amazon-renewed/ref=zg_bs_nav_amazon-renewed_0 HTTP/1.1" 429 None
+2024-05-12 14:34:06,652 - DEBUG - url: https://www.amazon.com/Best-Sellers-Amazon-Renewed/zgbs/amazon-renewed/ref=zg_bs_nav_amazon-renewed_0
+2024-05-12 14:34:06,652 - DEBUG - status code: 429
+2024-05-12 14:34:07,654 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:08,519 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Amazon-Renewed/zgbs/amazon-renewed/ref=zg_bs_nav_amazon-renewed_0 HTTP/1.1" 200 None
+2024-05-12 14:34:08,980 - DEBUG - url: https://www.amazon.com/Best-Sellers-Amazon-Renewed/zgbs/amazon-renewed/ref=zg_bs_nav_amazon-renewed_0
+2024-05-12 14:34:08,980 - DEBUG - status code: 200
+2024-05-12 14:34:09,019 - INFO - 상품명: Apple iPhone 12, 64GB, Black - Fully Unlocked (Renewed)
+2024-05-12 14:34:09,020 - INFO - 가격: $235.00
+2024-05-12 14:34:09,021 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,022 - INFO - 리뷰 수: 21,540
+2024-05-12 14:34:09,022 - INFO - 상품명: Apple iPhone 11, 64GB, Black - Unlocked (Renewed)
+2024-05-12 14:34:09,023 - INFO - 가격: $185.00
+2024-05-12 14:34:09,023 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:09,023 - INFO - 리뷰 수: 49,737
+2024-05-12 14:34:09,024 - INFO - 상품명: Apple iPhone 13, 128GB, Midnight - Unlocked (Renewed)
+2024-05-12 14:34:09,024 - INFO - 가격: $354.00
+2024-05-12 14:34:09,024 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,024 - INFO - 리뷰 수: 8,336
+2024-05-12 14:34:09,025 - INFO - 상품명: Apple iPad (10.2-Inch, Wi-Fi, 32GB) - Space Gray (Renewed)
+2024-05-12 14:34:09,025 - INFO - 가격: $162.00
+2024-05-12 14:34:09,025 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:09,026 - INFO - 리뷰 수: 8,705
+2024-05-12 14:34:09,026 - INFO - 상품명: Apple iPhone 12 Mini, 64GB, Black - Unlocked (Renewed)
+2024-05-12 14:34:09,026 - INFO - 가격: $185.00
+2024-05-12 14:34:09,026 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,026 - INFO - 리뷰 수: 10,938
+2024-05-12 14:34:09,027 - INFO - 상품명: Apple iPhone 12 Pro, 128GB, Graphite - Fully Unlocked (Renewed)
+2024-05-12 14:34:09,027 - INFO - 가격: $322.65
+2024-05-12 14:34:09,027 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,027 - INFO - 리뷰 수: 8,648
+2024-05-12 14:34:09,028 - INFO - 상품명: Apple iPhone XR, 64GB, Black - Unlocked (Renewed)
+2024-05-12 14:34:09,028 - INFO - 가격: $151.00
+2024-05-12 14:34:09,028 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:09,028 - INFO - 리뷰 수: 63,881
+2024-05-12 14:34:09,029 - INFO - 상품명: Apple iPhone SE 2nd Generation, US Version, 64GB, Black - Unlocked (Renewed)
+2024-05-12 14:34:09,029 - INFO - 가격: $112.99
+2024-05-12 14:34:09,029 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:09,029 - INFO - 리뷰 수: 17,241
+2024-05-12 14:34:09,029 - INFO - 상품명: Apple iPhone 13 Pro Max, 128GB, Sierra Blue - Unlocked (Renewed)
+2024-05-12 14:34:09,030 - INFO - 가격: $500.96
+2024-05-12 14:34:09,030 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,030 - INFO - 리뷰 수: 4,447
+2024-05-12 14:34:09,030 - INFO - 상품명: Apple iPhone 12 Pro Max 5G, US Version, 128GB, Graphite - Unlocked (Renewed)
+2024-05-12 14:34:09,031 - INFO - 가격: $374.90
+2024-05-12 14:34:09,031 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,031 - INFO - 리뷰 수: 8,355
+2024-05-12 14:34:09,032 - INFO - 상품명: Apple iPhone 11 Pro, US Version, 256GB, Space Gray - Unlocked (Renewed)
+2024-05-12 14:34:09,032 - INFO - 가격: $259.00
+2024-05-12 14:34:09,032 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,032 - INFO - 리뷰 수: 20,696
+2024-05-12 14:34:09,033 - INFO - 상품명: Apple iPad (2018 Model) with Wi-Fi only 32GB Apple 9.7in iPad - Space Gray (Renewed)
+2024-05-12 14:34:09,033 - INFO - 가격: $130.91
+2024-05-12 14:34:09,033 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:09,034 - INFO - 리뷰 수: 8,571
+2024-05-12 14:34:09,034 - INFO - 상품명: Apple Watch Series 4 (GPS, 40MM) - Gold Aluminum Case with Pink Sand Sport Band (Renewed)
+2024-05-12 14:34:09,034 - INFO - 가격: $106.70
+2024-05-12 14:34:09,035 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,036 - INFO - 리뷰 수: 20,443
+2024-05-12 14:34:09,036 - INFO - 상품명: (Renewed) Toshiba 8,000 BTU 115-Volt Portable Air Conditioner for rooms up to 250 sf
+2024-05-12 14:34:09,036 - INFO - 가격: $129.99
+2024-05-12 14:34:09,036 - INFO - 평점: 3.7 out of 5 stars
+2024-05-12 14:34:09,037 - INFO - 리뷰 수: 56
+2024-05-12 14:34:09,037 - INFO - 상품명: Apple iPhone 13 Mini, 128GB, Midnight - Unlocked (Renewed)
+2024-05-12 14:34:09,037 - INFO - 가격: $314.00
+2024-05-12 14:34:09,037 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,038 - INFO - 리뷰 수: 3,318
+2024-05-12 14:34:09,038 - INFO - 상품명: Apple iPhone 14, 128GB, Midnight - Unlocked (Renewed)
+2024-05-12 14:34:09,039 - INFO - 가격: $439.99
+2024-05-12 14:34:09,039 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,039 - INFO - 리뷰 수: 1,818
+2024-05-12 14:34:09,039 - INFO - 상품명: Apple iPhone 13 Pro, 128GB, Sierra Blue - Unlocked (Renewed)
+2024-05-12 14:34:09,039 - INFO - 가격: $449.24
+2024-05-12 14:34:09,040 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,040 - INFO - 리뷰 수: 3,491
+2024-05-12 14:34:09,040 - INFO - 상품명: Apple Watch Series 5 (GPS + Cellular, 40MM) - Gold Aluminum Case with Pink Sport Band (Renewed)
+2024-05-12 14:34:09,040 - INFO - 가격: $120.97
+2024-05-12 14:34:09,041 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,041 - INFO - 리뷰 수: 12,822
+2024-05-12 14:34:09,041 - INFO - 상품명: Apple Watch Series 6 (GPS, 44mm) - Silver Aluminum Case with White Sport Band (Renewed)
+2024-05-12 14:34:09,041 - INFO - 가격: $159.99
+2024-05-12 14:34:09,042 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:09,042 - INFO - 리뷰 수: 840
+2024-05-12 14:34:09,042 - INFO - 상품명: Apple iPhone 14 Plus, 128GB, Midnight - Unlocked (Renewed)
+2024-05-12 14:34:09,042 - INFO - 가격: $467.96
+2024-05-12 14:34:09,043 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:09,043 - INFO - 리뷰 수: 1,348
+2024-05-12 14:34:09,043 - INFO - 상품명: Samsung Galaxy S21 Ultra 5G, US Version, 128GB, Phantom Black - Unlocked (Renewed)
+2024-05-12 14:34:09,043 - INFO - 가격: $285.00
+2024-05-12 14:34:09,043 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,044 - INFO - 리뷰 수: 6,469
+2024-05-12 14:34:09,044 - INFO - 상품명: Apple Watch Series 7 (GPS, 45mm) Midnight Aluminum Case with Midnight Sport Band, Regular (Renewed)
+2024-05-12 14:34:09,044 - INFO - 가격: $181.56
+2024-05-12 14:34:09,044 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:09,045 - INFO - 리뷰 수: 1,753
+2024-05-12 14:34:09,045 - INFO - 상품명: Samsung Galaxy S21 5G, US Version, 128GB, Phantom Gray - Unlocked (Renewed)
+2024-05-12 14:34:09,045 - INFO - 가격: $181.00
+2024-05-12 14:34:09,045 - INFO - 평점: 3.9 out of 5 stars
+2024-05-12 14:34:09,046 - INFO - 리뷰 수: 4,057
+2024-05-12 14:34:09,046 - INFO - 상품명: Apple iPhone 14 Pro Max, 128GB, Space Black - Unlocked (Renewed)
+2024-05-12 14:34:09,046 - INFO - 가격: $700.00
+2024-05-12 14:34:09,046 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,047 - INFO - 리뷰 수: 1,636
+2024-05-12 14:34:09,047 - INFO - 상품명: Apple AirPods with Lightning Charging Case (3rd Generation) (Renewed)
+2024-05-12 14:34:09,047 - INFO - 가격: $125.49
+2024-05-12 14:34:09,047 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:09,048 - INFO - 리뷰 수: 1,094
+2024-05-12 14:34:09,048 - INFO - 상품명: Apple iPhone 14 Pro, 128GB, Space Black - Unlocked (Renewed)
+2024-05-12 14:34:09,048 - INFO - 가격: $629.97
+2024-05-12 14:34:09,048 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:09,049 - INFO - 리뷰 수: 1,500
+2024-05-12 14:34:09,049 - INFO - 상품명: Samsung Galaxy S20 FE 5G, 128GB, Cloud Navy - Unlocked (Renewed)
+2024-05-12 14:34:09,049 - INFO - 가격: $149.99
+2024-05-12 14:34:09,049 - INFO - 평점: 4.0 out of 5 stars
+2024-05-12 14:34:09,050 - INFO - 리뷰 수: 6,491
+2024-05-12 14:34:09,050 - INFO - 상품명: HP Newest 14" HD Laptop, Windows 11, Intel Celeron Dual-Core Processor Up to 2.60GHz, 4GB RAM, 64GB SSD, Webcam, Dale Pink(Renewed) (Dale Pink)
+2024-05-12 14:34:09,050 - INFO - 가격: $157.99
+2024-05-12 14:34:09,051 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,051 - INFO - 리뷰 수: 1,604
+2024-05-12 14:34:09,052 - INFO - 상품명: Samsung Galaxy S22 Ultra 5G Unlocked - 128GB - Black (Renewed)
+2024-05-12 14:34:09,053 - INFO - 가격: $372.50
+2024-05-12 14:34:09,053 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:09,053 - INFO - 리뷰 수: 1,771
+2024-05-12 14:34:09,054 - INFO - 상품명: Apple iPhone 13, 128GB, Midnight - Unlocked (Renewed Premium)
+2024-05-12 14:34:09,054 - INFO - 가격: $409.97
+2024-05-12 14:34:09,054 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:09,054 - INFO - 리뷰 수: 967
+2024-05-12 14:34:09,055 - INFO - best seller url: url
+2024-05-12 14:34:09,055 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:09,346 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0 HTTP/1.1" 429 None
+2024-05-12 14:34:09,348 - DEBUG - url: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0
+2024-05-12 14:34:09,349 - DEBUG - status code: 429
+2024-05-12 14:34:10,350 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:10,691 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0 HTTP/1.1" 429 None
+2024-05-12 14:34:10,694 - DEBUG - url: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0
+2024-05-12 14:34:10,695 - DEBUG - status code: 429
+2024-05-12 14:34:11,698 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:12,437 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0 HTTP/1.1" 200 None
+2024-05-12 14:34:12,888 - DEBUG - url: https://www.amazon.com/Best-Sellers-Appliances/zgbs/appliances/ref=zg_bs_nav_appliances_0
+2024-05-12 14:34:12,890 - DEBUG - status code: 200
+2024-05-12 14:34:12,927 - INFO - 상품명: EUHOMY Countertop Ice Maker Machine with Handle, 26lbs in 24Hrs, 9 Ice Cubes Ready in 6 Mins, Auto-Cleaning Portable Ice Maker with Basket and Scoop, for Home/Kitchen/Camping/RV. (Black)
+2024-05-12 14:34:12,928 - INFO - 가격: $65.28
+2024-05-12 14:34:12,928 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,928 - INFO - 리뷰 수: 4,399
+2024-05-12 14:34:12,929 - INFO - 상품명: Silonn Ice Maker Countertop, 9 Cubes Ready in 6 Mins, 26lbs in 24Hrs, Self-Cleaning Ice Machine with Ice Scoop and Basket, 2 Sizes of Bullet Ice for Home Kitchen Office Bar Party
+2024-05-12 14:34:12,929 - INFO - 가격: $62.37
+2024-05-12 14:34:12,929 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,930 - INFO - 리뷰 수: 26,658
+2024-05-12 14:34:12,930 - INFO - 상품명: Silonn Ice Maker Countertop, Portable Ice Machine with Carry Handle, Self-Cleaning Ice Makers with Basket and Scoop, 9 Cubes in 6 Mins, 26 lbs per Day, Ideal for Home, Kitchen, Camping, RV
+2024-05-12 14:34:12,930 - INFO - 가격: $63.59
+2024-05-12 14:34:12,930 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,931 - INFO - 리뷰 수: 1,905
+2024-05-12 14:34:12,931 - INFO - 상품명: COWSAR Ice Maker Countertop, Portable Ice Machine with Self-Cleaning, 26.5lbs/24Hrs, 9 Bullet Ice Cubes in 6 Mins, Ice Basket and Scoop, Ideal for Home, Kitchen, Bar, Camping
+2024-05-12 14:34:12,931 - INFO - 가격: $49.99
+2024-05-12 14:34:12,931 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,932 - INFO - 리뷰 수: 2,472
+2024-05-12 14:34:12,932 - INFO - 상품명: Nugget Countertop Ice Maker with Soft Chewable Ice, 34Lbs/24H, Pebble Portable Ice Machine with Ice Scoop, Self-Cleaning, One-Click Operation, for Kitchen,Office Stainless Steel Silver
+2024-05-12 14:34:12,932 - INFO - 가격: $214.99
+2024-05-12 14:34:12,932 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:12,932 - INFO - 리뷰 수: 3,193
+2024-05-12 14:34:12,933 - INFO - 상품명: ecozy Portable Countertop Ice Maker - 9 Ice Cubes in 6 Minutes, 26 lbs Daily Output, Self-Cleaning with Ice Bags, Scoop, and Basket for Kitchen, Office, Bar, Party - Black
+2024-05-12 14:34:12,933 - INFO - 가격: $69.09
+2024-05-12 14:34:12,933 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,934 - INFO - 리뷰 수: 5,071
+2024-05-12 14:34:12,934 - INFO - 상품명: AGLUCKY Ice Makers Countertop with Self-Cleaning, 26.5lbs/24hrs, 9 Cubes Ready in 6~8Mins, Portable Ice Machine with 2 Sizes Bullet Ice/Ice Scoop/Basket for Home/Kitchen/Office/Bar/Party, Black
+2024-05-12 14:34:12,934 - INFO - 가격: $71.57
+2024-05-12 14:34:12,934 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:12,934 - INFO - 리뷰 수: 24,228
+2024-05-12 14:34:12,935 - INFO - 상품명: Nugget Countertop Ice Maker, Silonn Chewable Pellet Ice Machine with Self-Cleaning Function, 33lbs/24H for Home, Kitchen, Office, Black
+2024-05-12 14:34:12,935 - INFO - 가격: $113.12
+2024-05-12 14:34:12,935 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:12,935 - INFO - 리뷰 수: 507
+2024-05-12 14:34:12,936 - INFO - 상품명: Portable Countertop Ice Maker Machine with Handle, 9 Bullet-Shaped Ice Cubes Ready in 6 Mins, 26Lbs/24H, Self-Cleaning Function with Ice Scoop and Basket for Home/Kitchen/Party (Grey)
+2024-05-12 14:34:12,936 - INFO - 가격: $35.99
+2024-05-12 14:34:12,937 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,937 - INFO - 리뷰 수: 1,594
+2024-05-12 14:34:12,937 - INFO - 상품명: Upstreman 3.2 Cu.Ft Mini Fridge with Freezer, Single Door Mini Fridge, Adjustable Thermostat, Mini Refrigerator for Bedroom, Office, Dorm, Black-BR321
+2024-05-12 14:34:12,937 - INFO - 가격: $139.99
+2024-05-12 14:34:12,938 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,938 - INFO - 리뷰 수: 2,827
+2024-05-12 14:34:12,938 - INFO - 상품명: Silonn Nugget Ice Maker Countertop, Pebble Ice Maker with Soft Chewable Ice, One-Click Operation Ice Machine with Self-Cleaning, 33lbs/24H for Home,Kitchen,Office
+2024-05-12 14:34:12,938 - INFO - 가격: $145.12
+2024-05-12 14:34:12,939 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,939 - INFO - 리뷰 수: 281
+2024-05-12 14:34:12,939 - INFO - 상품명: GE Profile Opal 2.0 with 0.75 Gallon Tank, Chewable Crunchable Countertop Nugget Ice Maker, Scoop included, 38 lbs in 24 hours, Pellet Ice Machine with WiFi & Smart Connected, Stainless Steel
+2024-05-12 14:34:12,939 - INFO - 가격: $475.49
+2024-05-12 14:34:12,940 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:12,940 - INFO - 리뷰 수: 3,873
+2024-05-12 14:34:12,940 - INFO - 상품명: FRIGIDAIRE EFIC189-Silver Compact Ice Maker, 26 lb per Day, Silver (Packaging May Vary)
+2024-05-12 14:34:12,940 - INFO - 가격: $89.99
+2024-05-12 14:34:12,940 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,941 - INFO - 리뷰 수: 15,446
+2024-05-12 14:34:12,941 - INFO - 상품명: psler Dirty Clean Dishwasher Magnet - Dishwasher Magnet Clean Dirty Sign Magnet for Dishwasher Dish Bin That Says Clean or Dirty Refrigerator for Kitchen Organization and Storage Necessities
+2024-05-12 14:34:12,941 - INFO - 가격: $3.99
+2024-05-12 14:34:12,942 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,942 - INFO - 리뷰 수: 6,387
+2024-05-12 14:34:12,942 - INFO - 상품명: Kismile Nugget Ice Makers Countertop,Pebble Ice Maker Machine with Chewable Ice, 35lbs/Day,One-Click Operation,Self-Cleaning Countertop ice Machine,Pellet Ice Maker Countertop for Home/Kitchen/Office
+2024-05-12 14:34:12,943 - INFO - 가격: $219.99
+2024-05-12 14:34:12,943 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:12,943 - INFO - 리뷰 수: 361
+2024-05-12 14:34:12,943 - INFO - 상품명: Frigidaire Countertop Ice Maker, Compact Machine, 26 lbs per day, Stainless
+2024-05-12 14:34:12,944 - INFO - 가격: $76.48
+2024-05-12 14:34:12,944 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,944 - INFO - 리뷰 수: 7,030
+2024-05-12 14:34:12,944 - INFO - 상품명: Electactic Ice Maker Countertop Portable Ice Maker Machine Self-Cleaning 30lbs/5Mins/24Hrs 2 Mode Ice Machine Counter Ice Maker with Scoop&Basket for Home/Office/Bar/RV Use Red
+2024-05-12 14:34:12,945 - INFO - 가격: $58.99
+2024-05-12 14:34:12,945 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,945 - INFO - 리뷰 수: 881
+2024-05-12 14:34:12,945 - INFO - 상품명: KUMIO Ice Makers Countertop, 9 Bullets Ready in 9 Mins, 26.5 Lbs/24 Hrs, Ice Machine with Self-Cleaning, Removable Ice Basket & Scoop, 2 Sizes of Bullet Ice for Kitchen Office Bar Party, Black
+2024-05-12 14:34:12,946 - INFO - 가격: $59.89
+2024-05-12 14:34:12,946 - INFO - 평점: 4.0 out of 5 stars
+2024-05-12 14:34:12,946 - INFO - 리뷰 수: 955
+2024-05-12 14:34:12,946 - INFO - 상품명: Igloo Automatic Ice Maker, Self- Cleaning, Countertop Size, 26 Pounds in 24 Hours, Cubes 7 Minutes, LED Control Panel, Scoop Included, Perfect for Water Bottles, Mixed Drinks, Stainless Steel
+2024-05-12 14:34:12,947 - INFO - 가격: $81.37
+2024-05-12 14:34:12,947 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:12,947 - INFO - 리뷰 수: 10,172
+2024-05-12 14:34:12,947 - INFO - 상품명: XPRESS ECOMMERCE Organic MUSHROOM MATCHA COFFEE NWT 180g- 30 Servings Instant Coffee 6.34 Ounce (Pack of 1)
+2024-05-12 14:34:12,947 - INFO - 가격: $42.50
+2024-05-12 14:34:12,948 - INFO - 평점: 3.9 out of 5 stars
+2024-05-12 14:34:12,948 - INFO - 리뷰 수: 223
+2024-05-12 14:34:12,948 - INFO - 상품명: Frigidaire EFIC123-SS Counter Top Maker, Produces 26 pounds Ice per Day, Stainless Steel, Stainless
+2024-05-12 14:34:12,948 - INFO - 가격: $65.79
+2024-05-12 14:34:12,949 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,949 - INFO - 리뷰 수: 2,724
+2024-05-12 14:34:12,949 - INFO - 상품명: EUHOMY Nugget Ice Maker Countertop with Handle, Ready in 6 Mins, 34lbs/24H, Removable Top Cover, Auto-Cleaning, Portable Sonic Ice Maker with Basket and Scoop, for Home/Party/RV/Camping. (Black)
+2024-05-12 14:34:12,949 - INFO - 가격: $131.13
+2024-05-12 14:34:12,950 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,950 - INFO - 리뷰 수: 1,983
+2024-05-12 14:34:12,950 - INFO - 상품명: FRIGIDAIRE Gallery EFIC255 Countertop Crunchy Chewable Nugget Ice Maker, 44lbs per Day, Auto Self Cleaning, 2.0 Gen, Navy
+2024-05-12 14:34:12,950 - INFO - 가격: $189.09
+2024-05-12 14:34:12,951 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:12,951 - INFO - 리뷰 수: 3,812
+2024-05-12 14:34:12,951 - INFO - 상품명: Ice Makers Countertop, Self-Cleaning Function, Portable Electric Ice Cube Maker Machine, 9 Pellet Ice Ready in 6 Mins, 26lbs 24Hrs with Ice Bags and Scoop Basket for Home Bar Camping RV(Black)
+2024-05-12 14:34:12,952 - INFO - 가격: $89.98
+2024-05-12 14:34:12,952 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:12,952 - INFO - 리뷰 수: 2,281
+2024-05-12 14:34:12,952 - INFO - 상품명: Broan-NuTone 413001 Non-Ducted Ductless Range Hood with Lights Exhaust Fan for Under Cabinet, 30-Inch, White
+2024-05-12 14:34:12,952 - INFO - 가격: $79.00
+2024-05-12 14:34:12,953 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:12,953 - INFO - 리뷰 수: 18,825
+2024-05-12 14:34:12,953 - INFO - 상품명: Upstreman 1.7 Cu.ft Mini Fridge with Freezer, Adjustable Thermostat, Energy Saving, Low Noise, Single Door Compact Refrigerator for Dorm, Office, Bedroom, Black-FR17
+2024-05-12 14:34:12,953 - INFO - 가격: $129.97
+2024-05-12 14:34:12,954 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:12,954 - INFO - 리뷰 수: 1,288
+2024-05-12 14:34:12,954 - INFO - 상품명: BLACK+DECKER Small Portable Washer, Washing Machine for Household Use, Portable Washer 0.9 Cu. Ft. with 5 Cycles, Transparent Lid & LED Display
+2024-05-12 14:34:12,954 - INFO - 가격: $238.00
+2024-05-12 14:34:12,955 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,955 - INFO - 리뷰 수: 6,601
+2024-05-12 14:34:12,955 - INFO - 상품명: Silonn Countertop Ice Maker, 9 Cubes Ready in 6 Mins, 26lbs in 24Hrs, Self-Cleaning Ice Machine with Ice Scoop and Basket, 2 Sizes of Bullet Ice for Home Kitchen Office Bar Party, Black
+2024-05-12 14:34:12,955 - INFO - 가격: $51.37
+2024-05-12 14:34:12,956 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:12,956 - INFO - 리뷰 수: 2,939
+2024-05-12 14:34:12,956 - INFO - 상품명: Countertop Ice Maker, Ice Maker Machine 6 Mins 9 Ice, 26.5lbs/24Hrs, Portable Ice Maker Machine with Self-Cleaning, Ice Scoop, and Basket, Compact Ice Maker for Home/Kitchen/Office/Party
+2024-05-12 14:34:12,956 - INFO - 가격: $70.92
+2024-05-12 14:34:12,957 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:12,957 - INFO - 리뷰 수: 6,809
+2024-05-12 14:34:12,957 - INFO - 상품명: Auertech Portable Washing Machine, 28lbs Twin Tub Washer Mini Compact Laundry Machine with Drain Pump, Semi-automatic 18lbs Washer 10lbs Spinner Combo for Dorms, Apartments, RVs
+2024-05-12 14:34:12,957 - INFO - 가격: $179.99
+2024-05-12 14:34:12,958 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:12,958 - INFO - 리뷰 수: 1,950
+2024-05-12 14:34:12,958 - INFO - best seller url: url
+2024-05-12 14:34:12,959 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:13,540 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_mobile-apps_0 HTTP/1.1" 200 None
+2024-05-12 14:34:14,008 - DEBUG - url: https://www.amazon.com/Best-Sellers-Apps-Games/zgbs/mobile-apps/ref=zg_bs_nav_mobile-apps_0
+2024-05-12 14:34:14,009 - DEBUG - status code: 200
+2024-05-12 14:34:14,057 - INFO - 상품명: 
+2024-05-12 14:34:14,061 - INFO - 가격: $6.99
+2024-05-12 14:34:14,062 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:14,064 - INFO - 리뷰 수: Mojang
+2024-05-12 14:34:14,064 - INFO - 상품명: 
+2024-05-12 14:34:14,064 - INFO - 가격: $1.99
+2024-05-12 14:34:14,065 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:14,067 - INFO - 리뷰 수: RobTop Games
+2024-05-12 14:34:14,067 - INFO - 상품명: 
+2024-05-12 14:34:14,068 - INFO - 가격: $7.99
+2024-05-12 14:34:14,070 - INFO - 평점: 3.3 out of 5 stars
+2024-05-12 14:34:14,074 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,074 - INFO - 상품명: 
+2024-05-12 14:34:14,075 - INFO - 가격: $7.99
+2024-05-12 14:34:14,076 - INFO - 평점: 3.4 out of 5 stars
+2024-05-12 14:34:14,077 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,077 - INFO - 상품명: 
+2024-05-12 14:34:14,078 - INFO - 가격: $2.99
+2024-05-12 14:34:14,078 - INFO - 평점: 3.8 out of 5 stars
+2024-05-12 14:34:14,079 - INFO - 리뷰 수: Scott Cawthon
+2024-05-12 14:34:14,080 - INFO - 상품명: 
+2024-05-12 14:34:14,081 - INFO - 가격: $8.99
+2024-05-12 14:34:14,081 - INFO - 평점: 3.5 out of 5 stars
+2024-05-12 14:34:14,082 - INFO - 리뷰 수: Coreleague Games
+2024-05-12 14:34:14,082 - INFO - 상품명: 
+2024-05-12 14:34:14,083 - INFO - 가격: $7.99
+2024-05-12 14:34:14,084 - INFO - 평점: 3.7 out of 5 stars
+2024-05-12 14:34:14,084 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,084 - INFO - 상품명: 
+2024-05-12 14:34:14,085 - INFO - 가격: $9.99
+2024-05-12 14:34:14,085 - INFO - 평점: 3.4 out of 5 stars
+2024-05-12 14:34:14,085 - INFO - 리뷰 수: Atlas Mountains games
+2024-05-12 14:34:14,085 - INFO - 상품명: 
+2024-05-12 14:34:14,086 - INFO - 가격: $7.99
+2024-05-12 14:34:14,086 - INFO - 평점: 3.1 out of 5 stars
+2024-05-12 14:34:14,086 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,087 - INFO - 상품명: 
+2024-05-12 14:34:14,087 - INFO - 가격: $2.99
+2024-05-12 14:34:14,087 - INFO - 평점: 3.8 out of 5 stars
+2024-05-12 14:34:14,087 - INFO - 리뷰 수: Eagle Eyes
+2024-05-12 14:34:14,088 - INFO - 상품명: 
+2024-05-12 14:34:14,088 - INFO - 가격: $4.99
+2024-05-12 14:34:14,088 - INFO - 평점: 2.8 out of 5 stars
+2024-05-12 14:34:14,088 - INFO - 리뷰 수: Stigma Lab
+2024-05-12 14:34:14,089 - INFO - 상품명: 
+2024-05-12 14:34:14,089 - INFO - 가격: $7.99
+2024-05-12 14:34:14,089 - INFO - 평점: 2.9 out of 5 stars
+2024-05-12 14:34:14,089 - INFO - 리뷰 수: Coreleague Games
+2024-05-12 14:34:14,090 - INFO - 상품명: 
+2024-05-12 14:34:14,090 - INFO - 가격: $8.99
+2024-05-12 14:34:14,090 - INFO - 평점: 3.5 out of 5 stars
+2024-05-12 14:34:14,090 - INFO - 리뷰 수: Coreleague Games
+2024-05-12 14:34:14,091 - INFO - 상품명: 
+2024-05-12 14:34:14,091 - INFO - 가격: $7.99
+2024-05-12 14:34:14,091 - INFO - 평점: 2.9 out of 5 stars
+2024-05-12 14:34:14,092 - INFO - 리뷰 수: Heliopod Games
+2024-05-12 14:34:14,093 - INFO - 상품명: 
+2024-05-12 14:34:14,093 - INFO - 가격: $8.99
+2024-05-12 14:34:14,094 - INFO - 평점: 2.9 out of 5 stars
+2024-05-12 14:34:14,095 - INFO - 리뷰 수: AppAdventurer
+2024-05-12 14:34:14,095 - INFO - 상품명: 
+2024-05-12 14:34:14,096 - INFO - 가격: $7.99
+2024-05-12 14:34:14,096 - INFO - 평점: 3.2 out of 5 stars
+2024-05-12 14:34:14,097 - INFO - 리뷰 수: MANOGARU LIMITED
+2024-05-12 14:34:14,098 - INFO - 상품명: 
+2024-05-12 14:34:14,098 - INFO - 가격: $6.99
+2024-05-12 14:34:14,098 - INFO - 평점: 3.5 out of 5 stars
+2024-05-12 14:34:14,098 - INFO - 리뷰 수: Amazecraft
+2024-05-12 14:34:14,099 - INFO - 상품명: 
+2024-05-12 14:34:14,099 - INFO - 가격: $0.99
+2024-05-12 14:34:14,099 - INFO - 평점: 3.6 out of 5 stars
+2024-05-12 14:34:14,100 - INFO - 리뷰 수: 3Dee Space
+2024-05-12 14:34:14,100 - INFO - 상품명: 
+2024-05-12 14:34:14,101 - INFO - 가격: $6.99
+2024-05-12 14:34:14,101 - INFO - 평점: 3.5 out of 5 stars
+2024-05-12 14:34:14,101 - INFO - 리뷰 수: Coreleague Games
+2024-05-12 14:34:14,102 - INFO - 상품명: 
+2024-05-12 14:34:14,102 - INFO - 가격: $8.99
+2024-05-12 14:34:14,102 - INFO - 평점: 3.2 out of 5 stars
+2024-05-12 14:34:14,102 - INFO - 리뷰 수: AppAdventurer
+2024-05-12 14:34:14,103 - INFO - 상품명: 
+2024-05-12 14:34:14,103 - INFO - 가격: $6.99
+2024-05-12 14:34:14,103 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:14,104 - INFO - 리뷰 수: Ninja Kiwi
+2024-05-12 14:34:14,104 - INFO - 상품명: 
+2024-05-12 14:34:14,105 - INFO - 가격: $8.99
+2024-05-12 14:34:14,106 - INFO - 평점: 2.9 out of 5 stars
+2024-05-12 14:34:14,106 - INFO - 리뷰 수: BazhannyaTeam
+2024-05-12 14:34:14,107 - INFO - 상품명: 
+2024-05-12 14:34:14,107 - INFO - 가격: $7.99
+2024-05-12 14:34:14,108 - INFO - 평점: 3.2 out of 5 stars
+2024-05-12 14:34:14,109 - INFO - 리뷰 수: Coreleague Games
+2024-05-12 14:34:14,109 - INFO - 상품명: 
+2024-05-12 14:34:14,110 - INFO - 가격: $7.99
+2024-05-12 14:34:14,110 - INFO - 평점: 1.5 out of 5 stars
+2024-05-12 14:34:14,111 - INFO - 리뷰 수: Heliopod Games
+2024-05-12 14:34:14,112 - INFO - 상품명: 
+2024-05-12 14:34:14,112 - INFO - 가격: $7.99
+2024-05-12 14:34:14,112 - INFO - 평점: 3.1 out of 5 stars
+2024-05-12 14:34:14,113 - INFO - 리뷰 수: BazhannyaTeam
+2024-05-12 14:34:14,113 - INFO - 상품명: 
+2024-05-12 14:34:14,113 - INFO - 가격: $5.99
+2024-05-12 14:34:14,114 - INFO - 평점: 2.8 out of 5 stars
+2024-05-12 14:34:14,114 - INFO - 리뷰 수: Nadiyaodna
+2024-05-12 14:34:14,114 - INFO - 상품명: 
+2024-05-12 14:34:14,115 - INFO - 가격: $7.99
+2024-05-12 14:34:14,115 - INFO - 평점: 2.6 out of 5 stars
+2024-05-12 14:34:14,116 - INFO - 리뷰 수: BazhannyaTeam
+2024-05-12 14:34:14,116 - INFO - 상품명: 
+2024-05-12 14:34:14,117 - INFO - 가격: $8.99
+2024-05-12 14:34:14,117 - INFO - 평점: 2.9 out of 5 stars
+2024-05-12 14:34:14,118 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,118 - INFO - 상품명: 
+2024-05-12 14:34:14,118 - INFO - 가격: $9.99
+2024-05-12 14:34:14,119 - INFO - 평점: 3.5 out of 5 stars
+2024-05-12 14:34:14,119 - INFO - 리뷰 수: Malyk Production
+2024-05-12 14:34:14,119 - INFO - 상품명: 
+2024-05-12 14:34:14,120 - INFO - 가격: $7.99
+2024-05-12 14:34:14,120 - INFO - 평점: 3.0 out of 5 stars
+2024-05-12 14:34:14,121 - INFO - 리뷰 수: Slyuni Lab
+2024-05-12 14:34:14,121 - INFO - best seller url: url
+2024-05-12 14:34:14,122 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:14,915 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_arts-crafts_0 HTTP/1.1" 200 None
+2024-05-12 14:34:15,371 - DEBUG - url: https://www.amazon.com/Best-Sellers-Arts-Crafts-Sewing/zgbs/arts-crafts/ref=zg_bs_nav_arts-crafts_0
+2024-05-12 14:34:15,371 - DEBUG - status code: 200
+2024-05-12 14:34:15,408 - INFO - 상품명: Apple Barrel Acrylic Paint in Assorted Colors (2 Ounce), 20503 White
+2024-05-12 14:34:15,408 - INFO - 가격: $0.58
+2024-05-12 14:34:15,409 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,409 - INFO - 리뷰 수: 34,744
+2024-05-12 14:34:15,410 - INFO - 상품명: Berwick 061176 7/8" Wide Single Face Satin Ribbon, White, 6 Yds
+2024-05-12 14:34:15,410 - INFO - 가격: $1.97
+2024-05-12 14:34:15,410 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,411 - INFO - 리뷰 수: 9,990
+2024-05-12 14:34:15,411 - INFO - 상품명: GDMINLO Soft Tape Measure Double Scale Body Sewing Flexible Ruler for Weight Loss Medical Body Measurement Sewing Tailor Craft Vinyl Ruler, Has Centimetre Scale on Reverse Side 60-inch（White）
+2024-05-12 14:34:15,411 - INFO - 가격: $3.59
+2024-05-12 14:34:15,412 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:15,412 - INFO - 리뷰 수: 61,163
+2024-05-12 14:34:15,412 - INFO - 상품명: 5 STARS UNITED Ring Sizers for Loose Rings - 8-Pack Easy-Clip Ring Size Adjuster for 1-10 mm Band Widths - Ring Guards for Women and Men
+2024-05-12 14:34:15,412 - INFO - 가격: $9.58
+2024-05-12 14:34:15,413 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:15,413 - INFO - 리뷰 수: 71,067
+2024-05-12 14:34:15,413 - INFO - 상품명: Betem 24 Colors Dual Tip Acrylic Paint Pens Markers, Premium Acrylic Paint Pens for Wood, Canvas, Stone, Rock Painting, Glass, Ceramic Surfaces, DIY Crafts Making Art Supplies
+2024-05-12 14:34:15,413 - INFO - 가격: $11.99
+2024-05-12 14:34:15,414 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,414 - INFO - 리뷰 수: 7,122
+2024-05-12 14:34:15,414 - INFO - 상품명: Scissors, iBayam 8" All Purpose Scissors Bulk 3-Pack, Ultra Sharp 2.5mm Thick Blade Shears Comfort-Grip Scissors for Office Desk Accessories Sewing Fabric Home Craft School Supplies, Right/Left Handed
+2024-05-12 14:34:15,414 - INFO - 가격: $9.99
+2024-05-12 14:34:15,415 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:15,415 - INFO - 리뷰 수: 79,547
+2024-05-12 14:34:15,415 - INFO - 상품명: Crayola Air Dry Clay (5lb Bucket), Natural White Modeling Clay for Kids, Sculpting Material, Craft Supplies for Classrooms [Amazon Exclusive]
+2024-05-12 14:34:15,415 - INFO - 가격: $16.75
+2024-05-12 14:34:15,416 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,416 - INFO - 리뷰 수: 12,743
+2024-05-12 14:34:15,416 - INFO - 상품명: Lion Brand Yarn (1 Skein) 24/7 Cotton® Yarn, White
+2024-05-12 14:34:15,417 - INFO - 가격: $7.98
+2024-05-12 14:34:15,417 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:15,417 - INFO - 리뷰 수: 12,966
+2024-05-12 14:34:15,417 - INFO - 상품명: beadsland Flat Back Crystal Rhinestones Round Gems for Nail Art and Craft Glue Fix, CrystalAB (4.6-4.8mm) SS20/1440pcs
+2024-05-12 14:34:15,418 - INFO - 가격: $8.29
+2024-05-12 14:34:15,418 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,418 - INFO - 리뷰 수: 8,426
+2024-05-12 14:34:15,418 - INFO - 상품명: Mod Podge Gloss Sealer, Glue & Finish: All-in-One Craft Solution- Quick Dry, Easy Clean, for Wood, Paper, Fabric & More. Non-Toxic - Craft with Confidence, Made in USA, 8 oz., Pack of 1
+2024-05-12 14:34:15,419 - INFO - 가격: $3.99
+2024-05-12 14:34:15,419 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,419 - INFO - 리뷰 수: 27,771
+2024-05-12 14:34:15,419 - INFO - 상품명: Coquimbo Sewing Kit Gifts for Grandma, Mom, Friend, Adults Beginner Kids Traveler, Portable Sewing Supplies Accessories with Case Contains Thread, Needle, Scissors, Measure Tape, Thimble etc(Black, M)
+2024-05-12 14:34:15,420 - INFO - 가격: $5.99
+2024-05-12 14:34:15,420 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,420 - INFO - 리뷰 수: 12,934
+2024-05-12 14:34:15,420 - INFO - 상품명: Apple Barrel Acrylic Paint in Assorted Colors (8 Ounce), 20403 White
+2024-05-12 14:34:15,421 - INFO - 가격: $2.67
+2024-05-12 14:34:15,421 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:15,421 - INFO - 리뷰 수: 8,762
+2024-05-12 14:34:15,422 - INFO - 상품명: HeatnBond Hem Iron-On Adhesive, Super Weight, 3/4 Inch x 8 Yards, White
+2024-05-12 14:34:15,422 - INFO - 가격: $4.26
+2024-05-12 14:34:15,422 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:15,422 - INFO - 리뷰 수: 23,839
+2024-05-12 14:34:15,423 - INFO - 상품명: Paxcoo 1mm Elastic Bracelet String Cord Stretch Bead Cord for Jewelry Making and Bracelet Making White
+2024-05-12 14:34:15,423 - INFO - 가격: $6.99
+2024-05-12 14:34:15,423 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:15,423 - INFO - 리뷰 수: 25,957
+2024-05-12 14:34:15,424 - INFO - 상품명: HTVRONT HTV Vinyl Rolls Heat Transfer Vinyl - 12" x 8ft White HTV Vinyl for Shirts, Iron on Vinyl for Cricut & Cameo - Easy to Cut & Weed for Heat Vinyl Design (White)
+2024-05-12 14:34:15,424 - INFO - 가격: $8.99
+2024-05-12 14:34:15,424 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:15,424 - INFO - 리뷰 수: 36,079
+2024-05-12 14:34:15,424 - INFO - 상품명: Redtwo 5100 Clay Beads Bracelet Making Kit, Flat Preppy Beads for Friendship Jewelry Making,Polymer Heishi Beads with Charms Gifts for Teen Girls Crafts for Girls Ages 8-12
+2024-05-12 14:34:15,425 - INFO - 가격: $7.99
+2024-05-12 14:34:15,425 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,425 - INFO - 리뷰 수: 6,615
+2024-05-12 14:34:15,425 - INFO - 상품명: Duck 1265015 1.88" x 20 yd Winking Tape, Single Roll, White
+2024-05-12 14:34:15,426 - INFO - 가격: $3.94
+2024-05-12 14:34:15,426 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,426 - INFO - 리뷰 수: 37,123
+2024-05-12 14:34:15,427 - INFO - 상품명: Gionlion 6000 Clay Beads Bracelet Making Kit, 24 Colors Flat Preppy Beads for Friendship Bracelets, Polymer Clay Beads with Charms for Jewelry Making, Crafts Gifts for Girls Ages 6-12
+2024-05-12 14:34:15,427 - INFO - 가격: $9.99
+2024-05-12 14:34:15,427 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,428 - INFO - 리뷰 수: 10,207
+2024-05-12 14:34:15,428 - INFO - 상품명: Melsan 1x4 inch Hook and Loop Strips with Adhesive - 15 Sets, Strong Back Adhesive Fasten Mounting Tape for Home or Office Use - Instead of Holes and Screws, Black
+2024-05-12 14:34:15,428 - INFO - 가격: $9.90
+2024-05-12 14:34:15,428 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:15,429 - INFO - 리뷰 수: 14,899
+2024-05-12 14:34:15,429 - INFO - 상품명: Ring Sizer 1-17 REIDEA Measuring Tool with Magnified Glass, Reusable Finger Size Gauge Jewelry Sizing Tool USA Rings Size (Black Sizer Gold Scale)
+2024-05-12 14:34:15,429 - INFO - 가격: $2.99
+2024-05-12 14:34:15,429 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,430 - INFO - 리뷰 수: 3,833
+2024-05-12 14:34:15,430 - INFO - 상품명: Vanhench Brown Wrapping Paper, Craft Paper, Kraft Paper 17.5"x 1200"(100'), Gift Wrapping Bulletin Board Arts & Crafts, Bouquet Flower Table Covering Poster Packing Shipping Moving Supplies 65GSM 45LB
+2024-05-12 14:34:15,430 - INFO - 가격: $7.98
+2024-05-12 14:34:15,430 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,430 - INFO - 리뷰 수: 1,555
+2024-05-12 14:34:15,431 - INFO - 상품명: Apple Barrel Multi Surface Acrylic Paint, 2 oz, Black 2 Fl Oz
+2024-05-12 14:34:15,431 - INFO - 가격: $1.07
+2024-05-12 14:34:15,431 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:15,432 - INFO - 리뷰 수: 11,749
+2024-05-12 14:34:15,432 - INFO - 상품명: The Woobles Beginners Crochet Kit with Easy Peasy Yarn as seen on Shark Tank - with Step-by-Step Video Tutorials - Pierre The Penguin
+2024-05-12 14:34:15,432 - INFO - 가격: $29.98
+2024-05-12 14:34:15,432 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:15,433 - INFO - 리뷰 수: 4,367
+2024-05-12 14:34:15,433 - INFO - 상품명: Plaid Wood Unfinished Letter, 8" Wooden Surface Perfect for DIY Arts and Crafts Projects, 63580, 8 inch
+2024-05-12 14:34:15,433 - INFO - 가격: $3.49
+2024-05-12 14:34:15,433 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:15,434 - INFO - 리뷰 수: 397
+2024-05-12 14:34:15,434 - INFO - 상품명: Astrobrights/Neenah Bright White Cardstock, 8.5" x 11", 65 lb/176 gsm, White, 75 Sheets (90905-02) - Packaging May Vary
+2024-05-12 14:34:15,434 - INFO - 가격: $11.30
+2024-05-12 14:34:15,434 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:15,435 - INFO - 리뷰 수: 21,832
+2024-05-12 14:34:15,435 - INFO - 상품명: Goo Gone Adhesive Remover - 8 Ounce - Surface Safe Adhesive Remover Safely Removes Stickers Labels Decals Residue Tape Chewing Gum Grease Tar
+2024-05-12 14:34:15,435 - INFO - 가격: $8.07
+2024-05-12 14:34:15,435 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,436 - INFO - 리뷰 수: 27,723
+2024-05-12 14:34:15,436 - INFO - 상품명: SAKURA Pigma Micron Fineliner Pens - Archival Black Ink Pens - Pens for Writing, Drawing, or Journaling - Assorted Point Sizes - 6 Pack
+2024-05-12 14:34:15,436 - INFO - 가격: $11.59
+2024-05-12 14:34:15,436 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:15,437 - INFO - 리뷰 수: 58,220
+2024-05-12 14:34:15,437 - INFO - 상품명: ELMER'S Disappearing Purple School Glue Sticks, Washable, 7 Grams, 30 Count
+2024-05-12 14:34:15,437 - INFO - 가격: $9.89
+2024-05-12 14:34:15,437 - INFO - 평점: 4.9 out of 5 stars
+2024-05-12 14:34:15,437 - INFO - 리뷰 수: 37,597
+2024-05-12 14:34:15,438 - INFO - 상품명: Quick Clothing Fixer,Consulbefor Sewing Machine,Quilt Tacking Gun,Micro Stitch Gun,Mini Stitch Hemming Gun for Clothes,Micro Tagging Stitch Tool for Clothing (Purple)
+2024-05-12 14:34:15,438 - INFO - 가격: $15.98
+2024-05-12 14:34:15,438 - INFO - 평점: 5.0 out of 5 stars
+2024-05-12 14:34:15,438 - INFO - 리뷰 수: 3
+2024-05-12 14:34:15,439 - INFO - 상품명: P&J Trading - Fresh Cotton Scented Oil 30ml - Fragrance Oil for Candle Making, Soap Making, Diffuser Oil
+2024-05-12 14:34:15,439 - INFO - 가격: $7.99
+2024-05-12 14:34:15,439 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:15,439 - INFO - 리뷰 수: 1,705
+2024-05-12 14:34:15,440 - INFO - best seller url: url
+2024-05-12 14:34:15,440 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:15,751 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0 HTTP/1.1" 429 None
+2024-05-12 14:34:15,758 - DEBUG - url: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0
+2024-05-12 14:34:15,759 - DEBUG - status code: 429
+2024-05-12 14:34:16,760 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:17,091 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0 HTTP/1.1" 429 None
+2024-05-12 14:34:17,095 - DEBUG - url: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0
+2024-05-12 14:34:17,096 - DEBUG - status code: 429
+2024-05-12 14:34:18,099 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:18,414 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0 HTTP/1.1" 429 None
+2024-05-12 14:34:18,416 - DEBUG - url: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0
+2024-05-12 14:34:18,417 - DEBUG - status code: 429
+2024-05-12 14:34:19,419 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:19,939 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0 HTTP/1.1" 200 None
+2024-05-12 14:34:20,394 - DEBUG - url: https://www.amazon.com/Best-Sellers-Audible-Books-Originals/zgbs/audible/ref=zg_bs_nav_audible_0
+2024-05-12 14:34:20,394 - DEBUG - status code: 200
+2024-05-12 14:34:20,435 - INFO - 상품명: 
+2024-05-12 14:34:20,436 - INFO - 가격: $21.65
+2024-05-12 14:34:20,436 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,437 - INFO - 리뷰 수: Kristin Hannah
+2024-05-12 14:34:20,437 - INFO - 상품명: 
+2024-05-12 14:34:20,437 - INFO - 가격: $17.72
+2024-05-12 14:34:20,437 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,438 - INFO - 리뷰 수: Emily Henry
+2024-05-12 14:34:20,438 - INFO - 상품명: 
+2024-05-12 14:34:20,438 - INFO - 가격: $12.96
+2024-05-12 14:34:20,438 - INFO - 평점: 4.0 out of 5 stars
+2024-05-12 14:34:20,439 - INFO - 리뷰 수: Lee Smith
+2024-05-12 14:34:20,439 - INFO - 상품명: 
+2024-05-12 14:34:20,439 - INFO - 가격: $15.75
+2024-05-12 14:34:20,440 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:20,440 - INFO - 리뷰 수: James Clear
+2024-05-12 14:34:20,440 - INFO - 상품명: 
+2024-05-12 14:34:20,440 - INFO - 가격: $17.72
+2024-05-12 14:34:20,441 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,441 - INFO - 리뷰 수: Jonathan Haidt
+2024-05-12 14:34:20,441 - INFO - 상품명: 
+2024-05-12 14:34:20,441 - INFO - 가격: $21.66
+2024-05-12 14:34:20,441 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:20,442 - INFO - 리뷰 수: Erik Larson
+2024-05-12 14:34:20,442 - INFO - 상품명: 
+2024-05-12 14:34:20,442 - INFO - 가격: $15.66
+2024-05-12 14:34:20,442 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,443 - INFO - 리뷰 수: Whoopi Goldberg
+2024-05-12 14:34:20,443 - INFO - 상품명: 
+2024-05-12 14:34:20,443 - INFO - 가격: $29.01
+2024-05-12 14:34:20,443 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,444 - INFO - 리뷰 수: Tom O'Neill
+2024-05-12 14:34:20,444 - INFO - 상품명: 
+2024-05-12 14:34:20,444 - INFO - 가격: $19.10
+2024-05-12 14:34:20,444 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,445 - INFO - 리뷰 수: Abby Jimenez
+2024-05-12 14:34:20,445 - INFO - 상품명: 
+2024-05-12 14:34:20,445 - INFO - 가격: $17.72
+2024-05-12 14:34:20,445 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:20,446 - INFO - 리뷰 수: Ashley Elston
+2024-05-12 14:34:20,446 - INFO - 상품명: 
+2024-05-12 14:34:20,446 - INFO - 가격: $22.57
+2024-05-12 14:34:20,446 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:20,446 - INFO - 리뷰 수: Rebecca Yarros
+2024-05-12 14:34:20,447 - INFO - 상품명: 
+2024-05-12 14:34:20,447 - INFO - 가격: $21.83
+2024-05-12 14:34:20,447 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,448 - INFO - 리뷰 수: David Baldacci
+2024-05-12 14:34:20,448 - INFO - 상품명: 
+2024-05-12 14:34:20,448 - INFO - 가격: $17.72
+2024-05-12 14:34:20,449 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:20,449 - INFO - 리뷰 수: Charles Duhigg
+2024-05-12 14:34:20,449 - INFO - 상품명: 
+2024-05-12 14:34:20,449 - INFO - 가격: $26.33
+2024-05-12 14:34:20,449 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,450 - INFO - 리뷰 수: Rebecca Yarros
+2024-05-12 14:34:20,450 - INFO - 상품명: 
+2024-05-12 14:34:20,450 - INFO - 가격: $20.99
+2024-05-12 14:34:20,450 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:20,451 - INFO - 리뷰 수: Sarah J. Maas
+2024-05-12 14:34:20,451 - INFO - 상품명: 
+2024-05-12 14:34:20,451 - INFO - 가격: $17.72
+2024-05-12 14:34:20,451 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:20,452 - INFO - 리뷰 수: Scott Galloway
+2024-05-12 14:34:20,452 - INFO - 상품명: 
+2024-05-12 14:34:20,452 - INFO - 가격: $11.80
+2024-05-12 14:34:20,453 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,453 - INFO - 리뷰 수: Jennette McCurdy
+2024-05-12 14:34:20,453 - INFO - 상품명: 
+2024-05-12 14:34:20,453 - INFO - 가격: $17.71
+2024-05-12 14:34:20,454 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:20,454 - INFO - 리뷰 수: Amy Tintera
+2024-05-12 14:34:20,454 - INFO - 상품명: 
+2024-05-12 14:34:20,454 - INFO - 가격: $17.32
+2024-05-12 14:34:20,455 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:20,455 - INFO - 리뷰 수: Mark Manson
+2024-05-12 14:34:20,455 - INFO - 상품명: 
+2024-05-12 14:34:20,455 - INFO - 가격: $35.95
+2024-05-12 14:34:20,456 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,456 - INFO - 리뷰 수: Frank Herbert
+2024-05-12 14:34:20,456 - INFO - 상품명: 
+2024-05-12 14:34:20,456 - INFO - 가격: $29.99
+2024-05-12 14:34:20,457 - INFO - 평점: 
+2024-05-12 14:34:20,457 - INFO - 리뷰 수: J.K. Rowling
+2024-05-12 14:34:20,457 - INFO - 상품명: 
+2024-05-12 14:34:20,457 - INFO - 가격: $19.69
+2024-05-12 14:34:20,458 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:20,458 - INFO - 리뷰 수: James McBride
+2024-05-12 14:34:20,458 - INFO - 상품명: 
+2024-05-12 14:34:20,458 - INFO - 가격: $20.34
+2024-05-12 14:34:20,458 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:20,459 - INFO - 리뷰 수: Kiersten Modglin
+2024-05-12 14:34:20,459 - INFO - 상품명: 
+2024-05-12 14:34:20,459 - INFO - 가격: $14.67
+2024-05-12 14:34:20,459 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,460 - INFO - 리뷰 수: Brandon Sanderson
+2024-05-12 14:34:20,460 - INFO - 상품명: 
+2024-05-12 14:34:20,460 - INFO - 가격: $20.99
+2024-05-12 14:34:20,460 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,461 - INFO - 리뷰 수: Sarah J. Maas
+2024-05-12 14:34:20,461 - INFO - 상품명: 
+2024-05-12 14:34:20,461 - INFO - 가격: $22.04
+2024-05-12 14:34:20,461 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:20,461 - INFO - 리뷰 수: Shelby Van Pelt
+2024-05-12 14:34:20,462 - INFO - 상품명: 
+2024-05-12 14:34:20,462 - INFO - 가격: $17.50
+2024-05-12 14:34:20,462 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:20,462 - INFO - 리뷰 수: Jeneva Rose
+2024-05-12 14:34:20,463 - INFO - 상품명: 
+2024-05-12 14:34:20,463 - INFO - 가격: $30.57
+2024-05-12 14:34:20,463 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:20,463 - INFO - 리뷰 수: Sarah J. Maas
+2024-05-12 14:34:20,464 - INFO - 상품명: 
+2024-05-12 14:34:20,464 - INFO - 가격: $17.46
+2024-05-12 14:34:20,464 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:20,465 - INFO - 리뷰 수: Morgan Housel
+2024-05-12 14:34:20,465 - INFO - 상품명: 
+2024-05-12 14:34:20,465 - INFO - 가격: $17.46
+2024-05-12 14:34:20,465 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:20,466 - INFO - 리뷰 수: Freida McFadden
+2024-05-12 14:34:20,466 - INFO - best seller url: url
+2024-05-12 14:34:20,467 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:21,244 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_automotive_0 HTTP/1.1" 200 None
+2024-05-12 14:34:21,653 - DEBUG - url: https://www.amazon.com/Best-Sellers-Automotive/zgbs/automotive/ref=zg_bs_nav_automotive_0
+2024-05-12 14:34:21,653 - DEBUG - status code: 200
+2024-05-12 14:34:21,689 - INFO - 상품명: Rain-X 5079281-2 Latitude 2-In-1 Wiper Blades, 26 Inch Windshield Wipers (Pack Of 1), Automotive Replacement Windshield Wiper Blades With Patented Rain-X Water Repellency Formula
+2024-05-12 14:34:21,689 - INFO - 가격: $16.54
+2024-05-12 14:34:21,690 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,690 - INFO - 리뷰 수: 91,969
+2024-05-12 14:34:21,690 - INFO - 상품명: Camco TastePURE RV Water Filter - New Advanced 6-Step Patent-Protected Filtration - Camping Essentials for Fresh Drinking Water - RV Inline Water Filter w/Flexible Hose Protector, Made in USA (40043)
+2024-05-12 14:34:21,690 - INFO - 가격: $20.04
+2024-05-12 14:34:21,691 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:21,691 - INFO - 리뷰 수: 49,309
+2024-05-12 14:34:21,691 - INFO - 상품명: Chemical Guys SPI22016 Total Interior Cleaner and Protectant, Safe for Cars, Trucks, SUVs, Jeeps, Motorcycles, RVs & More, 16 fl oz
+2024-05-12 14:34:21,691 - INFO - 가격: $11.97
+2024-05-12 14:34:21,692 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,692 - INFO - 리뷰 수: 38,579
+2024-05-12 14:34:21,692 - INFO - 상품명: TICARVE Car Cleaning Gel Detailing Putty Car Putty Auto Detailing Tools Car Interior Cleaner Cleaning Slime Car Accessories Keyboard Cleaner Rose/NT WT: 5.6 oz (160 gr)
+2024-05-12 14:34:21,692 - INFO - 가격: $5.99
+2024-05-12 14:34:21,693 - INFO - 평점: 4.2 out of 5 stars
+2024-05-12 14:34:21,693 - INFO - 리뷰 수: 13,651
+2024-05-12 14:34:21,693 - INFO - 상품명: CERAKOTE® Ceramic Headlight Restoration Kit – Guaranteed To Last As Long As You Own Your Vehicle – Brings Headlights back to Like New Condition - 3 Easy Steps - No Power Tools Required
+2024-05-12 14:34:21,694 - INFO - 가격: $16.88
+2024-05-12 14:34:21,694 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,694 - INFO - 리뷰 수: 38,630
+2024-05-12 14:34:21,694 - INFO - 상품명: Febreze Car Air Freshener Vent Clip Unstoppables Fresh Scent, .07 oz Car vent Clip, Pack of 3
+2024-05-12 14:34:21,695 - INFO - 가격: $7.93
+2024-05-12 14:34:21,695 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,695 - INFO - 리뷰 수: 27,368
+2024-05-12 14:34:21,695 - INFO - 상품명: Qifutan Car Phone Holder Mount Phone Mount for Car Windshield Dashboard Air Vent Universal Hands Free Automobile Cell Phone Holder Fit for iPhone Smartphone Carbon Fiber
+2024-05-12 14:34:21,696 - INFO - 가격: $11.99
+2024-05-12 14:34:21,696 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:21,696 - INFO - 리뷰 수: 12,288
+2024-05-12 14:34:21,696 - INFO - 상품명: Rain-X 820145 WeatherBeater Wiper Blades, 26" and 18" Windshield Wipers (Pack of 2), Automotive Replacement Windshield Wiper Blades That Meet Or Exceed OEM Quality And Durability Standards
+2024-05-12 14:34:21,696 - INFO - 가격: $27.37
+2024-05-12 14:34:21,697 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,697 - INFO - 리뷰 수: 52,898
+2024-05-12 14:34:21,697 - INFO - 상품명: Camco TastePURE 25-Ft Water Hose - RV Drinking Water Hose Contains No Lead, No BPA & No Phthalate - Features Diamond-Hatch Reinforced PVC Design - 5/8” Inside Diameter, Made in the USA (22783)
+2024-05-12 14:34:21,697 - INFO - 가격: $17.25
+2024-05-12 14:34:21,698 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,698 - INFO - 리뷰 수: 37,767
+2024-05-12 14:34:21,698 - INFO - 상품명: NOCO Boost Plus GB40 1000A UltraSafe Car Battery Jump Starter, 12V Battery Pack, Battery Booster, Jump Box, Portable Charger and Jumper Cables for 6.0L Gasoline and 3.0L Diesel Engines, Gray
+2024-05-12 14:34:21,698 - INFO - 가격: $89.27
+2024-05-12 14:34:21,699 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:21,699 - INFO - 리뷰 수: 100,880
+2024-05-12 14:34:21,699 - INFO - 상품명: USANOOKS Microfiber Cleaning Cloth Grey - 12 Packs 12.5"x12.5" - High Performance - 1200 Washes, Ultra Absorbent Towels Weave Grime & Liquid for Streak-Free Mirror Shine - Car Washing Cloth
+2024-05-12 14:34:21,699 - INFO - 가격: $9.99
+2024-05-12 14:34:21,700 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:21,700 - INFO - 리뷰 수: 9,307
+2024-05-12 14:34:21,700 - INFO - 상품명: PULIDIKI Car Cleaning Gel Universal Detailing Kit Automotive Dust Car Crevice Cleaner Slime Auto Air Vent Interior Detail Removal for Car Putty Cleaning Keyboard Cleaner Car Accessories Blue
+2024-05-12 14:34:21,700 - INFO - 가격: $6.99
+2024-05-12 14:34:21,700 - INFO - 평점: 4.1 out of 5 stars
+2024-05-12 14:34:21,701 - INFO - 리뷰 수: 84,618
+2024-05-12 14:34:21,701 - INFO - 상품명: AstroAI Tire Inflator Portable Air Compressor Tire Air Pump for Car Tires - Car Accessories, 12V DC Auto Pump with Digital Pressure Gauge, Emergency LED Light for Bicycle, Balloons, Yellow
+2024-05-12 14:34:21,701 - INFO - 가격: $31.99
+2024-05-12 14:34:21,701 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,701 - INFO - 리뷰 수: 86,172
+2024-05-12 14:34:21,702 - INFO - 상품명: ComfiLife Gel Enhanced Seat Cushion – Office Chair Cushion – Non-Slip Gel & Memory Foam Coccyx Cushion for Tailbone Pain - Desk Chair Car Seat Cushion Driving - Sciatica & Back Pain Relief (Black)
+2024-05-12 14:34:21,702 - INFO - 가격: $44.99
+2024-05-12 14:34:21,702 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:21,702 - INFO - 리뷰 수: 100,069
+2024-05-12 14:34:21,703 - INFO - 상품명: Mobil 1 Advanced Fuel Economy Full Synthetic Motor Oil 0W-20, 5 Quart
+2024-05-12 14:34:21,703 - INFO - 가격: $24.97
+2024-05-12 14:34:21,703 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:21,703 - INFO - 리뷰 수: 39,375
+2024-05-12 14:34:21,703 - INFO - 상품명: Rain-X 600001 Windshield Repair Kit - Quick And Easy Durable Resin Based Kit for Chips and Cracks, Good For Round Damage Below 1" In Diameter And Cracks Smaller Than 12" In Length, BLUE,YELLOW
+2024-05-12 14:34:21,704 - INFO - 가격: $12.54
+2024-05-12 14:34:21,704 - INFO - 평점: 3.9 out of 5 stars
+2024-05-12 14:34:21,704 - INFO - 리뷰 수: 40,410
+2024-05-12 14:34:21,704 - INFO - 상품명: Amazon Basics Microfiber Cleaning Cloths, Non-Abrasive, Reusable and Washable, Pack of 24, Blue/White/Yellow, 16" x 12"
+2024-05-12 14:34:21,705 - INFO - 가격: $13.04
+2024-05-12 14:34:21,705 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:21,705 - INFO - 리뷰 수: 73,447
+2024-05-12 14:34:21,705 - INFO - 상품명: Amooca Car Seat Headrest Hook 4 Pack Hanger Storage Organizer Universal for Handbag Purse Coat fit Universal Vehicle Car Black S Type
+2024-05-12 14:34:21,705 - INFO - 가격: $5.99
+2024-05-12 14:34:21,706 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,706 - INFO - 리뷰 수: 57,011
+2024-05-12 14:34:21,706 - INFO - 상품명: Armor All Protectant, Glass and Cleaning Wipes, Wipes for Car Interior and Car Exterior, 30 Count Each (Pack of 3)
+2024-05-12 14:34:21,706 - INFO - 가격: $14.99
+2024-05-12 14:34:21,707 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,707 - INFO - 리뷰 수: 14,347
+2024-05-12 14:34:21,707 - INFO - 상품명: SINGARO Car Cup Coaster, 4PCS Universal Non-Slip Cup Holders Embedded in Ornaments Coaster, Car Interior Accessories, Black
+2024-05-12 14:34:21,707 - INFO - 가격: $5.99
+2024-05-12 14:34:21,707 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:21,708 - INFO - 리뷰 수: 25,155
+2024-05-12 14:34:21,708 - INFO - 상품명: Leather Honey Leather Conditioner, Non-Toxic & Made in The USA Since 1968. Protect & Restore Leather Couches & Furniture, Car Interiors, Boots, Jackets, Shoes, Bags & Accessories. Safe for Any Color
+2024-05-12 14:34:21,708 - INFO - 가격: $16.99
+2024-05-12 14:34:21,709 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,709 - INFO - 리뷰 수: 52,070
+2024-05-12 14:34:21,709 - INFO - 상품명: iOttie Easy One Touch 6 Universal Car Mount Dashboard & Windshield Suction Cup Phone Holder for iPhone Samsung, Google, All Smartphones
+2024-05-12 14:34:21,709 - INFO - 가격: $13.64
+2024-05-12 14:34:21,710 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:21,710 - INFO - 리뷰 수: 133,330
+2024-05-12 14:34:21,710 - INFO - 상품명: Weize YTX14 BS ATV Battery High Performance - Maintenance Free - Sealed AGM YTX14-BS Motorcycle Battery compatible with Honda Suzuki Kawasaki Yamaha scooter snowmobile
+2024-05-12 14:34:21,711 - INFO - 가격: $46.99
+2024-05-12 14:34:21,711 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:21,711 - INFO - 리뷰 수: 35,286
+2024-05-12 14:34:21,711 - INFO - 상품명: Lamicall Bike Phone Holder, Motorcycle Phone Mount - Motorcycle Handlebar Cell Phone Clamp, Scooter Phone Clip for iPhone 15 Pro Max/Plus, 14 Pro Max, S9, S10 and More 4.7" to 6.8" Smartphones
+2024-05-12 14:34:21,711 - INFO - 가격: $18.99
+2024-05-12 14:34:21,712 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,712 - INFO - 리뷰 수: 50,372
+2024-05-12 14:34:21,712 - INFO - 상품명: GOOACC - GRC-33 240PCS Bumper Retainer Clips Car Plastic Rivets Fasteners Push Retainer Kit Most Popular Sizes Auto Push Pin Rivets Set -Door Trim Panel Fender Clips for GM Ford Toyota Honda Chrysler
+2024-05-12 14:34:21,712 - INFO - 가격: $16.99
+2024-05-12 14:34:21,713 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,713 - INFO - 리뷰 수: 64,363
+2024-05-12 14:34:21,713 - INFO - 상품명: EcoNour Car Windshield Sun Shade | Reflector Sunshade Offers Ultimate Protection for Car Interior | Cool Reflective Sun Blocker Fits Small Sedans, Mini SUVs, & Hatchbacks | Medium (64x32 inches)
+2024-05-12 14:34:21,714 - INFO - 가격: $14.99
+2024-05-12 14:34:21,714 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:21,714 - INFO - 리뷰 수: 67,005
+2024-05-12 14:34:21,714 - INFO - 상품명: Turtle Wax 53734 Hybrid Solutions Hyper Foam Wheel and Tire Cleaner, Spray on Heavy Duty Formula for Both Wheels and Tires, Brake Dust Remover, Clean and Prep for Tire Shine, 23 oz
+2024-05-12 14:34:21,715 - INFO - 가격: $11.99
+2024-05-12 14:34:21,715 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:21,715 - INFO - 리뷰 수: 737
+2024-05-12 14:34:21,715 - INFO - 상품명: ANCEL AD310 Classic Enhanced Universal OBD II Scanner Car Engine Fault Code Reader CAN Diagnostic Scan Tool-Black
+2024-05-12 14:34:21,716 - INFO - 가격: $25.99
+2024-05-12 14:34:21,716 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:21,716 - INFO - 리뷰 수: 45,041
+2024-05-12 14:34:21,716 - INFO - 상품명: Valvoline High Mileage with MaxLife Technology SAE 5W-30 Synthetic Blend Motor Oil 5 QT
+2024-05-12 14:34:21,717 - INFO - 가격: $19.97
+2024-05-12 14:34:21,717 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:21,717 - INFO - 리뷰 수: 28,009
+2024-05-12 14:34:21,717 - INFO - 상품명: Drift Car Air Freshener - Wood Air Freshener - Car Odor Eliminator - Amber Scent Starter Kit
+2024-05-12 14:34:21,718 - INFO - 가격: $12.95
+2024-05-12 14:34:21,718 - INFO - 평점: 3.9 out of 5 stars
+2024-05-12 14:34:21,718 - INFO - 리뷰 수: 977
+2024-05-12 14:34:21,718 - INFO - best seller url: url
+2024-05-12 14:34:21,719 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:22,020 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0 HTTP/1.1" 429 None
+2024-05-12 14:34:22,024 - DEBUG - url: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0
+2024-05-12 14:34:22,026 - DEBUG - status code: 429
+2024-05-12 14:34:23,027 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:23,347 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0 HTTP/1.1" 429 None
+2024-05-12 14:34:23,349 - DEBUG - url: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0
+2024-05-12 14:34:23,356 - DEBUG - status code: 429
+2024-05-12 14:34:24,365 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:24,699 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0 HTTP/1.1" 429 None
+2024-05-12 14:34:24,702 - DEBUG - url: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0
+2024-05-12 14:34:24,704 - DEBUG - status code: 429
+2024-05-12 14:34:25,707 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:26,422 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0 HTTP/1.1" 200 None
+2024-05-12 14:34:26,825 - DEBUG - url: https://www.amazon.com/Best-Sellers-Baby/zgbs/baby-products/ref=zg_bs_nav_baby-products_0
+2024-05-12 14:34:26,826 - DEBUG - status code: 200
+2024-05-12 14:34:26,864 - INFO - 상품명: Pampers Swaddlers Diapers - Size 4, One Month Supply (150 Count), Ultra Soft Disposable Baby Diapers
+2024-05-12 14:34:26,864 - INFO - 가격: $54.14
+2024-05-12 14:34:26,865 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,865 - INFO - 리뷰 수: 123,110
+2024-05-12 14:34:26,866 - INFO - 상품명: Huggies Natural Care Sensitive Baby Wipes, Unscented, Hypoallergenic, 99% Purified Water, 12 Flip-Top Packs (768 Wipes Total), Packaging May Vary
+2024-05-12 14:34:26,866 - INFO - 가격: $27.16
+2024-05-12 14:34:26,866 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,866 - INFO - 리뷰 수: 97,194
+2024-05-12 14:34:26,867 - INFO - 상품명: Pampers Sensitive Baby Wipes, Water Based, Hypoallergenic and Unscented, 8 Flip-Top Packs, 4 Refill Packs (1008 Wipes Total) [Packaging May Vary]
+2024-05-12 14:34:26,867 - INFO - 가격: $15.00
+2024-05-12 14:34:26,867 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,867 - INFO - 리뷰 수: 5,653
+2024-05-12 14:34:26,868 - INFO - 상품명: WaterWipes Plastic-Free Original Baby Wipes, 99.9% Water Based Wipes, Unscented & Hypoallergenic for Sensitive Skin, 60 Count (Pack of 12), Packaging May Vary
+2024-05-12 14:34:26,868 - INFO - 가격: $55.96
+2024-05-12 14:34:26,869 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,869 - INFO - 리뷰 수: 74,644
+2024-05-12 14:34:26,869 - INFO - 상품명: Huggies Size 1 Diapers, Little Snugglers Diapers, Size 1 (8-14 lbs), 198 Ct (6 packs of 33), Newborn
+2024-05-12 14:34:26,869 - INFO - 가격: $48.91
+2024-05-12 14:34:26,870 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,870 - INFO - 리뷰 수: 98,698
+2024-05-12 14:34:26,870 - INFO - 상품명: Amazon Brand - Mama Bear Gentle Touch Diapers, Hypoallergenic, Size 5, 132 Count (4 packs of 33)
+2024-05-12 14:34:26,871 - INFO - 가격: $33.34
+2024-05-12 14:34:26,871 - INFO - 평점: 4.3 out of 5 stars
+2024-05-12 14:34:26,871 - INFO - 리뷰 수: 56,190
+2024-05-12 14:34:26,871 - INFO - 상품명: Huggies Size 5 Diapers, Little Movers Baby Diapers, Size 5 (27+ lbs), 120 Count (2 Packs of 60) Package May Vary
+2024-05-12 14:34:26,872 - INFO - 가격: $51.38
+2024-05-12 14:34:26,872 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,872 - INFO - 리뷰 수: 34,818
+2024-05-12 14:34:26,872 - INFO - 상품명: Amazon Baby Registry Welcome Box
+2024-05-12 14:34:26,873 - INFO - 가격: $35.00
+2024-05-12 14:34:26,873 - INFO - 평점: 3.8 out of 5 stars
+2024-05-12 14:34:26,873 - INFO - 리뷰 수: 6,814
+2024-05-12 14:34:26,873 - INFO - 상품명: Pampers Baby Dry Diapers - Size 1, 120 Count, Absorbent Disposable Diapers
+2024-05-12 14:34:26,874 - INFO - 가격: $27.94
+2024-05-12 14:34:26,874 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,875 - INFO - 리뷰 수: 88,951
+2024-05-12 14:34:26,875 - INFO - 상품명: Dr. Brown’s Natural Flow Level 2 Narrow Baby Bottle Silicone Nipple, Medium Flow, 3m+, 100% Silicone Bottle Nipple, 6 Count
+2024-05-12 14:34:26,875 - INFO - 가격: $13.99
+2024-05-12 14:34:26,875 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,876 - INFO - 리뷰 수: 88,433
+2024-05-12 14:34:26,876 - INFO - 상품명: Huggies Simply Clean Fragrance-Free Baby Wipes, Unscented Diaper Wipes, 64 Count(Pack of 11) (704 Wipes Total)
+2024-05-12 14:34:26,876 - INFO - 가격: $20.99
+2024-05-12 14:34:26,877 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,877 - INFO - 리뷰 수: 58,667
+2024-05-12 14:34:26,877 - INFO - 상품명: Pampers Easy Ups Boys & Girls Potty Training Pants - Size 3T-4T, One Month Supply (124 Count), Training Underwear (Packaging May Vary)
+2024-05-12 14:34:26,877 - INFO - 가격: $39.78
+2024-05-12 14:34:26,878 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,878 - INFO - 리뷰 수: 9,276
+2024-05-12 14:34:26,878 - INFO - 상품명: Pampers Cruisers 360 Diapers - Size 5, One Month Supply (128 Count), Pull-On Disposable Baby Diapers, Gap-Free Fit
+2024-05-12 14:34:26,879 - INFO - 가격: $55.38
+2024-05-12 14:34:26,879 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,879 - INFO - 리뷰 수: 22,519
+2024-05-12 14:34:26,879 - INFO - 상품명: Pampers Aqua Pure Sensitive Baby Wipes, 99% Water, Hypoallergenic, Unscented, 12 Flip-Top Packs (672 Wipes Total) [Packaging May Vary]
+2024-05-12 14:34:26,880 - INFO - 가격: $33.47
+2024-05-12 14:34:26,880 - INFO - 평점: 4.9 out of 5 stars
+2024-05-12 14:34:26,880 - INFO - 리뷰 수: 2,688
+2024-05-12 14:34:26,881 - INFO - 상품명: The Honest Company Clean Conscious Unscented Wipes | Over 99% Water, Compostable, Plant-Based, Baby Wipes | Hypoallergenic for Sensitive Skin, EWG Verified | Geo Mood, 288 Count
+2024-05-12 14:34:26,881 - INFO - 가격: $27.99
+2024-05-12 14:34:26,881 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,881 - INFO - 리뷰 수: 6,497
+2024-05-12 14:34:26,882 - INFO - 상품명: Thinkbaby SPF 50+ Baby Mineral Sunscreen – Safe, Natural Sunblock for Babies - Water Resistant Sun Cream – Broad Spectrum UVA/UVB Sun Protection – Vegan Baby Sunscreen Lotion, 3 Oz.
+2024-05-12 14:34:26,882 - INFO - 가격: $8.65
+2024-05-12 14:34:26,882 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,883 - INFO - 리뷰 수: 20,675
+2024-05-12 14:34:26,883 - INFO - 상품명: Pampers Splashers Swim Diapers - Size M, 18 Count, Gap-Free Disposable Baby Swim Pants
+2024-05-12 14:34:26,883 - INFO - 가격: $1.80
+2024-05-12 14:34:26,883 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,884 - INFO - 리뷰 수: 29,205
+2024-05-12 14:34:26,884 - INFO - 상품명: Pampers Pure Protection Diapers - Size 5, One Month Supply (132 Count), Hypoallergenic Premium Disposable Baby Diapers
+2024-05-12 14:34:26,884 - INFO - 가격: $62.50
+2024-05-12 14:34:26,885 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,885 - INFO - 리뷰 수: 38,014
+2024-05-12 14:34:26,885 - INFO - 상품명: Huggies Overnites Size 6 Overnight Diapers (35+ lbs), 84 Ct (2 Packs of 42), Packaging May Vary
+2024-05-12 14:34:26,886 - INFO - 가격: $48.79
+2024-05-12 14:34:26,886 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,886 - INFO - 리뷰 수: 20,087
+2024-05-12 14:34:26,887 - INFO - 상품명: AMACOOL Battery Operated Stroller Fan Flexible Tripod Clip On Fan with 3 Speeds and Rotatable Handheld Personal Fan for Car Seat Crib Bike Treadmill (Black)
+2024-05-12 14:34:26,887 - INFO - 가격: $23.98
+2024-05-12 14:34:26,887 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:26,887 - INFO - 리뷰 수: 51,027
+2024-05-12 14:34:26,888 - INFO - 상품명: Aquaphor Baby Healing Ointment Advanced Therapy Skin Protectant, Dry Skin and Diaper Rash Ointment, 14 Oz Jar
+2024-05-12 14:34:26,888 - INFO - 가격: $11.99
+2024-05-12 14:34:26,888 - INFO - 평점: 4.9 out of 5 stars
+2024-05-12 14:34:26,889 - INFO - 리뷰 수: 57,042
+2024-05-12 14:34:26,889 - INFO - 상품명: Huggies Size 2 Diapers, Snug & Dry Baby Diapers, Size 2 (12-18 lbs), 100 Count
+2024-05-12 14:34:26,890 - INFO - 가격: $21.24
+2024-05-12 14:34:26,890 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,890 - INFO - 리뷰 수: 94,124
+2024-05-12 14:34:26,891 - INFO - 상품명: Pampers Swaddlers Overnights Diapers - Size 5, 88 Count, Disposable Baby Diapers, Night Time Skin Protection
+2024-05-12 14:34:26,891 - INFO - 가격: $44.54
+2024-05-12 14:34:26,891 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,891 - INFO - 리뷰 수: 20,798
+2024-05-12 14:34:26,892 - INFO - 상품명: Philips AVENT Soothie Pacifier, 0-3 Months, Green, 4 Pack, SCF190/41
+2024-05-12 14:34:26,892 - INFO - 가격: $11.62
+2024-05-12 14:34:26,892 - INFO - 평점: 4.8 out of 5 stars
+2024-05-12 14:34:26,892 - INFO - 리뷰 수: 55,529
+2024-05-12 14:34:26,893 - INFO - 상품명: 4-Pack Inkless Hand and Footprint Kit - Ink Pad for Baby Hand and Footprints - Dog Paw Print Kit,Dog Nose Print Kit - Baby Footprint Kit, Clean Touch Baby Handprint Kit, Mother's Day Gift (Jet Black)
+2024-05-12 14:34:26,893 - INFO - 가격: $11.17
+2024-05-12 14:34:26,893 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:26,894 - INFO - 리뷰 수: 6,026
+2024-05-12 14:34:26,894 - INFO - 상품명: Boudreaux's Butt Paste Maximum Strength Diaper Rash Cream, Ointment for Baby, 4 oz Tube
+2024-05-12 14:34:26,894 - INFO - 가격: $6.99
+2024-05-12 14:34:26,894 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,895 - INFO - 리뷰 수: 48,636
+2024-05-12 14:34:26,895 - INFO - 상품명: SAOROPEB 3D Butterfly Wall Decor 48 Pcs 4 Styles 3 Sizes, Gold Butterfly Decorations for Butterfly Birthday Decorations Butterfly Party Decorations Cake Decorations, Removable Stickers (Gold)
+2024-05-12 14:34:26,895 - INFO - 가격: $6.99
+2024-05-12 14:34:26,895 - INFO - 평점: 4.6 out of 5 stars
+2024-05-12 14:34:26,896 - INFO - 리뷰 수: 15,846
+2024-05-12 14:34:26,896 - INFO - 상품명: Luvs Diapers - Size 5, 172 Count, Paw Patrol Disposable Baby Diapers
+2024-05-12 14:34:26,896 - INFO - 가격: $37.10
+2024-05-12 14:34:26,896 - INFO - 평점: 4.5 out of 5 stars
+2024-05-12 14:34:26,897 - INFO - 리뷰 수: 21,735
+2024-05-12 14:34:26,897 - INFO - 상품명: iHealth No-Touch Forehead Thermometer, Infrared Digital Thermometer for Adults and Kids, Touchless Baby Thermometer, 3 Ultra-Sensitive Sensors, Large LED Digits, Quiet Vibration Feedback, Non Contact
+2024-05-12 14:34:26,897 - INFO - 가격: $15.99
+2024-05-12 14:34:26,897 - INFO - 평점: 4.4 out of 5 stars
+2024-05-12 14:34:26,898 - INFO - 리뷰 수: 172,754
+2024-05-12 14:34:26,898 - INFO - 상품명: Philips AVENT Natural Response Baby Bottle Nipples Flow 5, 6M+, 4pk, SCY965/04
+2024-05-12 14:34:26,898 - INFO - 가격: $11.99
+2024-05-12 14:34:26,898 - INFO - 평점: 4.7 out of 5 stars
+2024-05-12 14:34:26,899 - INFO - 리뷰 수: 18,307
+2024-05-12 14:34:26,899 - INFO - best seller url: url
+2024-05-12 14:34:26,900 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:27,228 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:27,229 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:27,230 - DEBUG - status code: 429
+2024-05-12 14:34:28,231 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:28,547 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:28,550 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:28,551 - DEBUG - status code: 429
+2024-05-12 14:34:29,553 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:29,873 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:29,875 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:29,876 - DEBUG - status code: 429
+2024-05-12 14:34:30,877 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:31,206 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:31,209 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:31,210 - DEBUG - status code: 429
+2024-05-12 14:34:32,213 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:32,547 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:32,548 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:32,548 - DEBUG - status code: 429
+2024-05-12 14:34:33,549 - DEBUG - Starting new HTTPS connection (1): www.amazon.com:443
+2024-05-12 14:34:33,842 - DEBUG - https://www.amazon.com:443 "GET /Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0 HTTP/1.1" 429 None
+2024-05-12 14:34:33,844 - DEBUG - url: https://www.amazon.com/Best-Sellers-Beauty-Personal-Care/zgbs/beauty/ref=zg_bs_nav_beauty_0
+2024-05-12 14:34:33,844 - DEBUG - status code: 429

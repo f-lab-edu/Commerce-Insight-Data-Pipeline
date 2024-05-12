@@ -1,18 +1,36 @@
 version: '3'
 services:
-  cidp:
+  amazon_product:
     build:
-      context: .
+      context: ./amazon_product
       dockerfile: Dockerfile
     volumes:
-      - ./app:/app
+      - ./amazon_product:/amazon_product
       - ./log:/log
     # command: poetry run python app/main.py
-    container_name: cidp
-    ports:
-      - "5000:5000"
+    container_name: cidp_amazon_product
+    # ports:
+    #   - "5000:5000"
     logging:
       driver: "json-file"
       options:
         max-size: "10m"
         max-file: "3"
+
+  twitter_user:
+    build:
+      context: ./twitter_user
+      dockerfile: Dockerfile
+    volumes:
+      - ./twitter_user:/twitter_user
+      - ./log:/log
+    # command: poetry run python app/main.py
+    container_name: cidp_twitter_user
+    # ports:
+    #   - "5000:5000"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
