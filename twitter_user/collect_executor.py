@@ -1,30 +1,70 @@
-import logging
-from logging.handlers import RotatingFileHandler
+from sqlalchemy import create_engine, Column, Integer, String
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy.orm import sessionmaker
+import requests
 
-def get_twitter_user_related_hashtag():
-    # amazon_url = "https://www.amazon.com"
-    # amazon_best_seller_url = "https://www.amazon.com/Best-Sellers/zgbs"
+engine = create_engine('sqlite:////twitter_user/tweet_info.db', echo=True)
+Base = declarative_base()
+Base.metadata.create_all(engine)
+Session = sessionmaker(bind=engine)
+session = Session()
 
-    # headers = {
-    #     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
-    # }
+class TweetInfo(Base):
+    __tablename__ = 'tweet_info'
 
-    
-    log_file = '../log/twitter_user.log'
-    max_file_size = 1024 * 1024 * 10  # 10MB
-    backup_count = 5
+    tweet_id = Column(String, primary_key=True)
+    tweet_text = Column(String)
+    tweet_created_at = Column(String)
+    tweet_language = Column(String)
+    tweet_favorite_count = Column(Integer)
+    tweet_retweet_count = Column(Integer)
+    tweet_reply_count = Column(Integer)
+    tweet_quote_count = Column(Integer)
+    tweet_retweet = Column(String)
+    tweet_timestamp = Column(String)
+    hashtag = Column(String)
+    tweet_views = Column(Integer)
 
-    handler = RotatingFileHandler(log_file, maxBytes=max_file_size, backupCount=backup_count)
-    handler.setLevel(logging.DEBUG)
-    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
+def get_info_from_twitter_api(hashtag):
+    url = "https://twitter154.p.rapidapi.com/hashtag/hashtag"
+    querystring = {"hashtag":f"#{hashtag}","limit":"20","section":"top"}
+    headers = {
+        "X-RapidAPI-Key": "8aa777509amsha8662f9648509b0p158304jsn868af5491a28",
+        "X-RapidAPI-Host": "twitter154.p.rapidapi.com"
+    }
+    response = requests.get(url, headers=headers, params=querystring)
+    return response.json()
 
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)  
-    logger.addHandler(handler)
+def generate_tweet_data(response, hashtag):
+    for data in response['results']:
+        tweet_info = {
+            'tweet_id': data['tweet_id'],
+            'tweet_text': data['text'],
+            'tweet_created_at': data['creation_date'],
+            'tweet_language': data['language'],
+            'tweet_favorite_count': data['favorite_count'],
+            'tweet_retweet_count': data['retweet_count'],
+            'tweet_reply_count': data['reply_count'],
+            'tweet_quote_count': data['quote_count'],
+            'tweet_retweet': data['retweet'],
+            'tweet_timestamp': data['timestamp'],
+            'hashtag': hashtag,
+            'tweet_views': data['views']
+        }
+        yield tweet_info
 
-    # amazon_product.crawler(amazon_url, amazon_best_seller_url, headers, logger)
-    logger.info(f"twitter user test")
+def save_tweet_info(tweet_generator):
+    for tweet_info in tweet_generator:
+        tweet = TweetInfo(**tweet_info)
+        session.add(tweet)
+        session.commit()
+        
+
+def main():
+    keyword = "poetry"
+    response = get_info_from_twitter_api(keyword)
+    tweet_generator = generate_tweet_data(response, keyword)
+    save_tweet_info(tweet_generator)
 
 if __name__ == '__main__':
-    get_twitter_user_related_hashtag()
+    main()

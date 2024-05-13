@@ -7,10 +7,7 @@ services:
     volumes:
       - ./amazon_product:/amazon_product
       - ./log:/log
-    # command: poetry run python app/main.py
     container_name: cidp_amazon_product
-    # ports:
-    #   - "5000:5000"
     logging:
       driver: "json-file"
       options:
@@ -24,10 +21,8 @@ services:
     volumes:
       - ./twitter_user:/twitter_user
       - ./log:/log
-    # command: poetry run python app/main.py
+      - C:/Users/Haerin/databases/tweet_info.db:/twitter_user/tweet_info.db
     container_name: cidp_twitter_user
-    # ports:
-    #   - "5000:5000"
     logging:
       driver: "json-file"
       options:
