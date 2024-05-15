@@ -12,8 +12,8 @@ session = Session()
 
 class TweetInfo(Base):
     __tablename__ = "tweet_info"
-
-    tweet_id = Column(String, primary_key=True)
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    tweet_id = Column(String)
     tweet_text = Column(String)
     tweet_created_at = Column(String)
     tweet_language = Column(String)
