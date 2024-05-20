@@ -7,6 +7,7 @@ services:
     volumes:
       - ./amazon_product:/amazon_product
       - ./log:/log
+      - C:/Users/Haerin/databases/tweet_info.db:/amazon_product/amazon_product.db 
     container_name: cidp_amazon_product
     logging:
       driver: "json-file"
@@ -21,7 +22,8 @@ services:
     volumes:
       - ./twitter_user:/twitter_user
       - ./log:/log
-      - C:/Users/Haerin/databases/tweet_info.db:/twitter_user/tweet_info.db
+      - C:/Users/Haerin/databases/tweet_info.db:/twitter_user/tweet_info.db # 다른 컴퓨터에서 작동 못함
+      # 컨테이너에서 작성된 디비가 호스트에서 볼려면 아티팩트? 를 써야함..(sqlite를 구글 드라이브에 올리는 식(자동화 식) 이거나 빅쿼리 같은 url접속을 사용하거나..)
     container_name: cidp_twitter_user
     logging:
       driver: "json-file"

@@ -27,6 +27,26 @@ class TweetInfo(Base):
     tweet_views = Column(Integer)
 
 
+class TweetUser(Base):
+    __tablename__ = "user_info"
+    id = Column(Integer, primary_key=True, autoincrement=True)
+    hashtag = Column(String)
+    user_id = Column(String)
+    user_created_at = Column(String)
+    username = Column(String)
+    name = Column(String)
+    user_follower_count = Column(Integer)
+    user_following_count = Column(Integer)
+    user_is_private = Column(String)
+    user_is_verified = Column(String)
+    user_location = Column(String)
+    user_description = Column(String)
+    user_external_url = Column(String)
+    user_number_of_tweets = Column(Integer)
+    user_bot = Column(String)
+    user_timestamp = Column(String)
+
+
 def get_info_from_twitter_api(hashtag):
     url = "https://twitter154.p.rapidapi.com/hashtag/hashtag"
     querystring = {"hashtag": f"#{hashtag}", "limit": "20", "section": "top"}
@@ -57,18 +77,48 @@ def generate_tweet_data(response, hashtag):
         yield tweet_info
 
 
-def save_tweet_info(tweet_generator):
+def generate_tweet_user(response, hashtag):
+    for data in response["results"]:
+        data = data["user"]
+        user_info = {
+            "hashtag": hashtag,
+            "user_id": data["user_id"],
+            "user_created_at": data["creation_date"],
+            "username": data["username"],
+            "name": data["name"],
+            "user_follower_count": data["follower_count"],
+            "user_following_count": data["following_count"],
+            "user_is_private": data["is_private"],
+            "user_is_verified": data["is_verified"],
+            "user_location": data["location"],
+            "user_description": data["description"],
+            "user_external_url": data["external_url"],
+            "user_number_of_tweets": data["number_of_tweets"],
+            "user_bot": data["bot"],
+            "user_timestamp": data["timestamp"],
+        }
+        yield user_info
+
+
+def save_tweet_info(tweet_generator, user_generator):
     for tweet_info in tweet_generator:
         tweet = TweetInfo(**tweet_info)
         session.add(tweet)
         session.commit()
 
+    for user_info in user_generator:
+        user = TweetUser(**user_info)
+        session.add(user)
+        session.commit()
+
 
 def main():
-    keyword = "poetry"
+    keyword = "icecream"
     response = get_info_from_twitter_api(keyword)
     tweet_generator = generate_tweet_data(response, keyword)
-    save_tweet_info(tweet_generator)
+    user_generator = generate_tweet_user(response, keyword)
+
+    save_tweet_info(tweet_generator, user_generator)
 
 
 if __name__ == "__main__":
