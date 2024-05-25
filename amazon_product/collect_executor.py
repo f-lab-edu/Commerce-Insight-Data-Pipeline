@@ -8,7 +8,9 @@ from bs4 import BeautifulSoup
 import logging
 from logging.handlers import RotatingFileHandler
 
-engine = create_engine("sqlite:////amazon_product/amazon_product.db", echo=True)
+docker_path = "sqlite:////amazon_product/amazon_product.db"
+local_path = "sqlite:///../tweet_info.db"
+engine = create_engine(local_path, echo=True)
 Base = declarative_base()
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
