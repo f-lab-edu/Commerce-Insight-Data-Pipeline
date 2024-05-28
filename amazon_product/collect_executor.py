@@ -7,6 +7,8 @@ import time
 from bs4 import BeautifulSoup
 import logging
 from logging.handlers import RotatingFileHandler
+from datetime import datetime, timedelta
+import pytz
 
 docker_path = "sqlite:////amazon_product/amazon_product.db"
 local_path = "sqlite:///../tweet_info.db"
@@ -85,7 +87,7 @@ def extract_product_info(html):
     return product_list
 
 
-def get_amazon_best_sellers():
+def get_amazon_best_sellers(start_time, end_time):
     amazon_url = "https://www.amazon.com"
     amazon_best_seller_url = "https://www.amazon.com/Best-Sellers/zgbs"
 
@@ -128,6 +130,18 @@ def get_amazon_best_sellers():
         time.sleep(3)
 
     for url in best_seller_urls:
+        korea_tz = pytz.timezone("Asia/Seoul")
+        current_time = datetime.now(korea_tz)
+        if current_time < start_time:
+            logger.info(
+                f"Waiting for the data collection start time...(start: {start_time}, now: {current_time})"
+            )
+            time.sleep(10)  # 1초 대기 후 다시 확인
+            continue
+        elif current_time >= end_time:
+            logger.info("Data collection has reached the end time.")
+            break
+
         url = amazon_url + url
         logger.info(f"best seller url: {url}")
         html = get_page(url, headers, logger)
@@ -158,10 +172,20 @@ def save_amazon_product(amazon_generator):
         session.commit()
 
 
-def main():
-    amazon_generator = get_amazon_best_sellers()
+def main(start_time, end_time, replace=False):
+    amazon_generator = get_amazon_best_sellers(start_time, end_time)
     save_amazon_product(amazon_generator)
 
 
 if __name__ == "__main__":
-    main()
+    start_time_str = input("시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ")
+    end_time_str = input("끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ")
+    replace_str = input("replace 하십니까? Y/N: ")
+
+    korea_tz = pytz.timezone("Asia/Seoul")
+    start_time = korea_tz.localize(
+        datetime.strptime(start_time_str, "%Y-%m-%d %H:%M:%S")
+    )
+    end_time = korea_tz.localize(datetime.strptime(end_time_str, "%Y-%m-%d %H:%M:%S"))
+    replace = True if replace_str == "Y" else False
+    main(start_time, end_time, replace)

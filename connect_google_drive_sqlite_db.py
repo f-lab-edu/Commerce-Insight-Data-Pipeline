@@ -8,7 +8,10 @@ import time
 sqlite_file_path = "./tweet_info.db"
 
 SCOPES = ["https://www.googleapis.com/auth/drive"]
-json_path = "C:/Users/Haerin/Downloads/client_secret_889975611963-bbo824bgcdjarj83aa8dl7phi2n00mgs.apps.googleusercontent.com.json"
+json_path = "./client_secret_889975611963-bbo824bgcdjarj83aa8dl7phi2n00mgs.apps.googleusercontent.com.json"
+# 1) IAM 계정 생성: Google Cloud IAM을 사용하여 Google Drive 내 특정 파일에만 액세스 권한을 부여하는 것은 직접적으로 지원되지 않음
+# 2) cred.json 파일 전달: 상대 경로로 명시하고 개별 메일로 전달하는 방식
+# 3) 스키마.sql 파일 생성
 flow = InstalledAppFlow.from_client_secrets_file(json_path, SCOPES)
 creds = flow.run_local_server(port=0)
 drive_service = build("drive", "v3", credentials=creds)
