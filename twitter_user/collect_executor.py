@@ -2,8 +2,11 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import requests
+from datetime import datetime, timedelta
+import pytz
 
-engine = create_engine("sqlite:////twitter_user/tweet_info.db", echo=True)
+local_path = "sqlite:///../tweet_info.db"
+engine = create_engine(local_path, echo=True)
 Base = declarative_base()
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind=engine)
@@ -112,7 +115,7 @@ def save_tweet_info(tweet_generator, user_generator):
         session.commit()
 
 
-def main():
+def main(start_time, end_time, replace=False):
     keyword = "icecream"
     response = get_info_from_twitter_api(keyword)
     tweet_generator = generate_tweet_data(response, keyword)
@@ -121,5 +124,44 @@ def main():
     save_tweet_info(tweet_generator, user_generator)
 
 
+def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
+    attempts = 0
+    while attempts < max_attempts:
+        try:
+            time_str = input(prompt)
+            if not time_str.strip() and default_time is not None:
+                return default_time
+            time = timezone.localize(datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S"))
+            return time
+        except ValueError:
+            attempts += 1
+            if attempts < max_attempts:
+                print(
+                    f"잘못된 형식입니다. 다시 입력해주세요. ({attempts}/{max_attempts})"
+                )
+            else:
+                print("입력 횟수를 초과했습니다. 기본값을 사용합니다.")
+                return default_time
+
+
 if __name__ == "__main__":
-    main()
+    korea_tz = pytz.timezone("Asia/Seoul")
+
+    start_time_default = korea_tz.localize(datetime.now())
+    start_time = get_input_time(
+        "(twitter) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+        korea_tz,
+        start_time_default,
+    )
+
+    end_time_default = start_time + timedelta(minutes=1)
+    end_time = get_input_time(
+        "(twitter) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+        korea_tz,
+        end_time_default,
+    )
+
+    # replace_str = input("replace 하십니까? Y/N: ")
+    # replace = True if replace_str == "Y" else False
+
+    main(start_time, end_time)

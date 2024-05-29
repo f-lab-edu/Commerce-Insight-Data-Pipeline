@@ -177,15 +177,44 @@ def main(start_time, end_time, replace=False):
     save_amazon_product(amazon_generator)
 
 
-if __name__ == "__main__":
-    start_time_str = input("시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ")
-    end_time_str = input("끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ")
-    replace_str = input("replace 하십니까? Y/N: ")
+def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
+    attempts = 0
+    while attempts < max_attempts:
+        try:
+            time_str = input(prompt)
+            if not time_str.strip() and default_time is not None:
+                return default_time
+            time = timezone.localize(datetime.strptime(time_str, "%Y-%m-%d %H:%M:%S"))
+            return time
+        except ValueError:
+            attempts += 1
+            if attempts < max_attempts:
+                print(
+                    f"잘못된 형식입니다. 다시 입력해주세요. ({attempts}/{max_attempts})"
+                )
+            else:
+                print("입력 횟수를 초과했습니다. 기본값을 사용합니다.")
+                return default_time
 
+
+if __name__ == "__main__":
     korea_tz = pytz.timezone("Asia/Seoul")
-    start_time = korea_tz.localize(
-        datetime.strptime(start_time_str, "%Y-%m-%d %H:%M:%S")
+
+    start_time_default = korea_tz.localize(datetime.now())
+    start_time = get_input_time(
+        "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+        korea_tz,
+        start_time_default,
     )
-    end_time = korea_tz.localize(datetime.strptime(end_time_str, "%Y-%m-%d %H:%M:%S"))
-    replace = True if replace_str == "Y" else False
-    main(start_time, end_time, replace)
+
+    end_time_default = start_time + timedelta(minutes=1)
+    end_time = get_input_time(
+        "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+        korea_tz,
+        end_time_default,
+    )
+
+    # replace_str = input("replace 하십니까? Y/N: ")
+    # replace = True if replace_str == "Y" else False
+
+    main(start_time, end_time)
