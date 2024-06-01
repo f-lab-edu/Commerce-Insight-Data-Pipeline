@@ -200,19 +200,19 @@ def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
 if __name__ == "__main__":
     korea_tz = pytz.timezone("Asia/Seoul")
 
-    start_time_default = korea_tz.localize(datetime.now())
-    start_time = get_input_time(
-        "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
-        korea_tz,
-        start_time_default,
-    )
+    start_time = korea_tz.localize(datetime.now())
+    # start_time = get_input_time(
+    #     "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+    #     korea_tz,
+    #     start_time,
+    # )
 
-    end_time_default = start_time + timedelta(minutes=1)
-    end_time = get_input_time(
-        "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
-        korea_tz,
-        end_time_default,
-    )
+    end_time = start_time + timedelta(minutes=1)
+    # end_time = get_input_time(
+    #     "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
+    #     korea_tz,
+    #     end_time,
+    # )
 
     # replace_str = input("replace 하십니까? Y/N: ")
     # replace = True if replace_str == "Y" else False
