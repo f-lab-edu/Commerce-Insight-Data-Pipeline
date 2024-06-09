@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ feat/collect_amazon_twitter ]
 
+defaults:
+  run:
+    shell: bash
+
 jobs:
 
   build:
@@ -17,7 +21,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.8
+        python-version: 3.12
         
     - name: Install dependencies
       run: |
@@ -30,10 +34,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
     - name: Run DB initialization script
       run: |
         python ./db_init.py
@@ -44,10 +44,6 @@ jobs:
     
     steps:
     - uses: actions/checkout@v2
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.8
     - name: Run Amazon data collection
       run: |
         cd amazon_product
