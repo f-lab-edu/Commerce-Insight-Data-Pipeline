@@ -207,7 +207,7 @@ if __name__ == "__main__":
     #     start_time,
     # )
 
-    end_time = start_time + timedelta(seconds=20)
+    end_time = start_time + timedelta(minutes=1)
     # end_time = get_input_time(
     #     "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
     #     korea_tz,

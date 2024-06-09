@@ -12,7 +12,7 @@ defaults:
 
 jobs:
 
-  db_initialization:
+  data_collection:
     runs-on: ubuntu-latest
     
     steps:
@@ -20,13 +20,7 @@ jobs:
     - name: Run DB initialization script
       run: |
         python ./db_init.py
-    
-  data_collection:
-    needs: db_initialization
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -41,6 +35,18 @@ jobs:
       run: |
         cd amazon_product
         python ./collect_executor.py
+
+    - name: Upload Amazon log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: amazon-log
+        path: ./log/amazon_product.log
+        
+    - name: Download Amazon log file
+      uses: actions/download-artifact@v2
+      with:
+        name: amazon-log
+        
     - name: Run Twitter data collection
       run: |
         cd twitter_user  
