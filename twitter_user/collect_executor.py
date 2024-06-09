@@ -2,6 +2,8 @@ from sqlalchemy import create_engine, Column, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 import requests
+import logging
+from logging.handlers import RotatingFileHandler
 
 # from datetime import datetime, timedelta
 # import pytz
@@ -122,6 +124,21 @@ def save_tweet_info(tweet_generator, user_generator):
 
 
 def get_amazon_product(batch_size, offset):
+    log_file = "../log/twitter.log"
+    max_file_size = 1024 * 1024 * 10  # 10MB
+    backup_count = 5
+
+    handler = RotatingFileHandler(
+        log_file, maxBytes=max_file_size, backupCount=backup_count
+    )
+    handler.setLevel(logging.DEBUG)
+    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+    handler.setFormatter(formatter)
+
+    logger = logging.getLogger()
+    logger.setLevel(logging.DEBUG)
+    logger.addHandler(handler)
+
     while True:
         pn = (
             session.query(AmazonProduct.product_name)
@@ -130,10 +147,10 @@ def get_amazon_product(batch_size, offset):
             .all()
         )
         if not pn:
-            print("No more products to fetch.")
+            logger.info("No more products to fetch.")
             break
 
-        print(f"다음 배치 {len(pn)} 개를 가져옵니다..")
+        logger.info(f"Next batch: {len(pn)}..")
         keywords = [product_name[0] for product_name in pn]
 
         offset += batch_size

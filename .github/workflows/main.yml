@@ -1,0 +1,67 @@
+name: Data Collection Workflow
+
+on:
+  push:
+    branches: [ feat/collect_amazon_twitter ]
+  pull_request:
+    branches: [ feat/collect_amazon_twitter ]
+
+jobs:
+
+  db_initialization:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Run DB initialization script
+      run: |
+        python ./db_init.py
+      
+  data_collection:
+    needs: db_initialization
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.8
+    - name: Run Amazon data collection
+      run: |
+        cd amazon_product
+        python ./collect_executor.py
+    - name: Run Twitter data collection
+      run: |
+        cd twitter_user  
+        python ./collect_executor.py
+
+  upload_artifact:
+    needs: data_collection
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Upload log files and database
+      uses: actions/upload-artifact@v2
+      with:
+        name: collected-data
+        path: |
+          ./log/amazon_product.log
+          ./log/twitter.log
+          ./tweet_info.db
+
+  download_artifact:
+    needs: upload_artifact
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Download data files
+      uses: actions/download-artifact@v2
+      with:
+        name: collected-data
