@@ -9,6 +9,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 from datetime import datetime, timedelta
 import pytz
+import os
 
 docker_path = "sqlite:////amazon_product/amazon_product.db"
 local_path = "sqlite:///../tweet_info.db"
@@ -95,7 +96,8 @@ def get_amazon_best_sellers(start_time, end_time):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
     }
 
-    log_file = "../log/amazon_product.log"
+    log_dir = "../log"
+    log_file = os.path.join(log_dir, "amazon_product.log")
     max_file_size = 1024 * 1024 * 10  # 10MB
     backup_count = 5
 

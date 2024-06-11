@@ -4,6 +4,7 @@ from sqlalchemy.orm import sessionmaker
 import requests
 import logging
 from logging.handlers import RotatingFileHandler
+import os
 
 # from datetime import datetime, timedelta
 # import pytz
@@ -124,7 +125,8 @@ def save_tweet_info(tweet_generator, user_generator):
 
 
 def get_amazon_product(batch_size, offset):
-    log_file = "../log/twitter.log"
+    log_dir = "../log"
+    log_file = os.path.join(log_dir, "twitter.log")
     max_file_size = 1024 * 1024 * 10  # 10MB
     backup_count = 5
 
