@@ -21,6 +21,17 @@ jobs:
       run: |
         python ./db_init.py
 
+    - name: Upload db log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: db log 
+        path: ./log/db_init.log
+        
+    - name: Download db log file
+      uses: actions/download-artifact@v2
+      with:
+        name: db log 
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
@@ -63,29 +74,13 @@ jobs:
       with:
         name: twitter-log
 
-  upload_artifact:
-    needs: data_collection
-    runs-on: ubuntu-latest
-    
-    steps:
-    - uses: actions/checkout@v2
-    
-    - name: Upload log files and database
+    - name: Upload sql file
       uses: actions/upload-artifact@v2
       with:
-        name: collected-data
-        path: |
-          ./log/amazon_product.log
-          ./log/twitter.log
-          ./log/db_init.log
-          ./tweet_info.db
-
-  download_artifact:
-    needs: upload_artifact
-    runs-on: ubuntu-latest
-    
-    steps:
-    - name: Download data files
+        name: sql
+        path: ./tweet_info.db
+        
+    - name: Download sql file
       uses: actions/download-artifact@v2
       with:
-        name: collected-data
+        name: sql
