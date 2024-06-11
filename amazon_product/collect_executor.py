@@ -117,7 +117,7 @@ def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
     while True:
         current_time = datetime.now(korea_tz)
         if current_time >= end_time:
-            logger.info("Data colelction has reached the end time.")
+            logger.info("Data collection has reached the end time.")
             break
 
         html = get_page(amazon_best_seller_url, headers, logger)
@@ -144,14 +144,8 @@ def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
 
         for url in best_seller_urls:
             current_time = datetime.now(korea_tz)
-            if current_time < start_time:
-                logger.info(
-                    f"Waiting for the data collection start time...(start: {start_time}, now: {current_time})"
-                )
-                time.sleep(10)  # 1초 대기 후 다시 확인
-                continue
-            elif current_time >= end_time:
-                logger.info("Data collection has reached the end time.")
+            if current_time >= chunk_end_time:
+                logger.info(f"Chunk time limit reached. Moving to the next chunk.")
                 break
 
             url = amazon_url + url
