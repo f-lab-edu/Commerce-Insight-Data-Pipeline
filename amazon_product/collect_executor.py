@@ -209,7 +209,7 @@ if __name__ == "__main__":
     #     start_time,
     # )
 
-    end_time = start_time + timedelta(minutes=3)
+    end_time = start_time + timedelta(minutes=10)
     # end_time = get_input_time(
     #     "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
     #     korea_tz,
