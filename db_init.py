@@ -3,7 +3,10 @@ import os
 import logging
 from logging.handlers import RotatingFileHandler
 
-log_file = "./log/db_init.log"
+log_dir = "./log"
+os.makedirs(log_dir, exist_ok=True)
+log_file = os.path.join(log_dir, "db_init.log")
+
 max_file_size = 1024 * 1024 * 10  # 10MB
 backup_count = 5
 
