@@ -77,6 +77,7 @@ jobs:
         path: |
           ./log/amazon_product.log
           ./log/twitter.log
+          ./log/db_init.log
           ./tweet_info.db
 
   download_artifact:

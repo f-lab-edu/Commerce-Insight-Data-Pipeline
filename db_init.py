@@ -1,5 +1,22 @@
 import sqlite3
 import os
+import logging
+from logging.handlers import RotatingFileHandler
+
+log_file = "./log/db_init.log"
+max_file_size = 1024 * 1024 * 10  # 10MB
+backup_count = 5
+
+handler = RotatingFileHandler(
+    log_file, maxBytes=max_file_size, backupCount=backup_count
+)
+handler.setLevel(logging.DEBUG)
+formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
+handler.setFormatter(formatter)
+
+logger = logging.getLogger()
+logger.setLevel(logging.DEBUG)
+logger.addHandler(handler)
 
 # SQL 문 준비
 create_amazon_product_table = """
@@ -66,6 +83,6 @@ if not os.path.exists(db_file):
 
     conn.commit()
     conn.close()
-    print("tweet_info.db 파일이 생성되었고, 테이블이 초기화되었습니다.")
+    logger.info("tweet_info.db was created, and the table was initialized.")
 else:
-    print("tweet_info.db 파일이 이미 존재합니다.")
+    logger.info("tweet_info.db already exists.")
