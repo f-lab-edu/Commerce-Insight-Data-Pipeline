@@ -11,6 +11,7 @@ from datetime import datetime, timedelta
 import pytz
 import os
 
+korea_tz = pytz.timezone("Asia/Seoul")
 docker_path = "sqlite:////amazon_product/amazon_product.db"
 local_path = "sqlite:///../tweet_info.db"
 engine = create_engine(local_path, echo=True)
@@ -88,7 +89,7 @@ def extract_product_info(html):
     return product_list
 
 
-def get_amazon_best_sellers(start_time, end_time):
+def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
     amazon_url = "https://www.amazon.com"
     amazon_best_seller_url = "https://www.amazon.com/Best-Sellers/zgbs"
 
@@ -97,6 +98,7 @@ def get_amazon_best_sellers(start_time, end_time):
     }
 
     log_dir = "../log"
+    os.makedirs(log_dir, exist_ok=True)
     log_file = os.path.join(log_dir, "amazon_product.log")
     max_file_size = 1024 * 1024 * 10  # 10MB
     backup_count = 5
@@ -112,59 +114,73 @@ def get_amazon_best_sellers(start_time, end_time):
     logger.setLevel(logging.DEBUG)
     logger.addHandler(handler)
 
-    html = get_page(amazon_best_seller_url, headers, logger)
-    soup = BeautifulSoup(html, "html.parser")
-
-    # 카테고리 div
-    for _ in range(5):
-        category_div = soup.find(
-            "div", class_="_p13n-zg-nav-tree-all_style_zg-browse-root__-jwNv"
-        )
-
-        if category_div:
-            html_content = str(category_div)
-            url_pattern = re.compile(r'href="(.*?)"')
-            best_seller_urls = url_pattern.findall(html_content)
-            break
-
-        else:
-            logger.error("Amazon Category div not found.")
-        time.sleep(3)
-
-    for url in best_seller_urls:
-        korea_tz = pytz.timezone("Asia/Seoul")
+    while True:
         current_time = datetime.now(korea_tz)
-        if current_time < start_time:
-            logger.info(
-                f"Waiting for the data collection start time...(start: {start_time}, now: {current_time})"
-            )
-            time.sleep(10)  # 1초 대기 후 다시 확인
-            continue
-        elif current_time >= end_time:
-            logger.info("Data collection has reached the end time.")
+        if current_time >= end_time:
+            logger.info("Data colelction has reached the end time.")
             break
 
-        url = amazon_url + url
-        logger.info(f"best seller url: {url}")
-        html = get_page(url, headers, logger)
-        if html:
-            product_list = extract_product_info(html)
-            for product in product_list:
-                logger.info(f"상품명: {product['product_name']}")
-                logger.info(f"가격: {product['price']}")
-                logger.info(f"평점: {product['rating']}")
-                logger.info(f"리뷰 수: {product['review_count']}")
+        html = get_page(amazon_best_seller_url, headers, logger)
+        soup = BeautifulSoup(html, "html.parser")
 
-                amazon_product = {
-                    "product_name": product["product_name"],
-                    "price": product["price"],
-                    "rating": product["rating"],
-                    "review_count": product["review_count"],
-                    "url": url,
-                }
-                yield amazon_product
-        else:
-            logger.error("페이지를 가져올 수 없습니다.")
+        # 카테고리 div
+        for _ in range(5):
+            category_div = soup.find(
+                "div", class_="_p13n-zg-nav-tree-all_style_zg-browse-root__-jwNv"
+            )
+
+            if category_div:
+                html_content = str(category_div)
+                url_pattern = re.compile(r'href="(.*?)"')
+                best_seller_urls = url_pattern.findall(html_content)
+                break
+
+            else:
+                logger.error("Amazon Category div not found.")
+            time.sleep(3)
+
+        chunk_start_time = current_time
+        chunk_end_time = current_time + timedelta(minutes=chunk_minutes)
+
+        for url in best_seller_urls:
+            current_time = datetime.now(korea_tz)
+            if current_time < start_time:
+                logger.info(
+                    f"Waiting for the data collection start time...(start: {start_time}, now: {current_time})"
+                )
+                time.sleep(10)  # 1초 대기 후 다시 확인
+                continue
+            elif current_time >= end_time:
+                logger.info("Data collection has reached the end time.")
+                break
+
+            url = amazon_url + url
+            logger.info(f"best seller url: {url}")
+            html = get_page(url, headers, logger)
+            if html:
+                product_list = extract_product_info(html)
+                for product in product_list:
+                    logger.info(f"상품명: {product['product_name']}")
+                    logger.info(f"가격: {product['price']}")
+                    logger.info(f"평점: {product['rating']}")
+                    logger.info(f"리뷰 수: {product['review_count']}")
+
+                    amazon_product = {
+                        "product_name": product["product_name"],
+                        "price": product["price"],
+                        "rating": product["rating"],
+                        "review_count": product["review_count"],
+                        "url": url,
+                    }
+                    yield amazon_product
+            else:
+                logger.error("페이지를 가져올 수 없습니다.")
+
+        elapsed_time = datetime.now(korea_tz) - chunk_start_time
+        remaining_time = timedelta(minutes=chunk_minutes) - elapsed_time
+        if remaining_time > timedelta(seconds=0):
+            logger.info(f"Sleeping for {remaining_time} until the next chunk.")
+            time.sleep(remaining_time.total_seconds())
 
 
 def save_amazon_product(amazon_generator):
@@ -174,8 +190,8 @@ def save_amazon_product(amazon_generator):
         session.commit()
 
 
-def main(start_time, end_time, replace=False):
-    amazon_generator = get_amazon_best_sellers(start_time, end_time)
+def main(start_time, end_time, chunk_minutes=1, replace=False):
+    amazon_generator = get_amazon_best_sellers(start_time, end_time, chunk_minutes)
     save_amazon_product(amazon_generator)
 
 
@@ -200,8 +216,6 @@ def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
 
 
 if __name__ == "__main__":
-    korea_tz = pytz.timezone("Asia/Seoul")
-
     start_time = korea_tz.localize(datetime.now())
     # start_time = get_input_time(
     #     "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
@@ -219,4 +233,4 @@ if __name__ == "__main__":
     # replace_str = input("replace 하십니까? Y/N: ")
     # replace = True if replace_str == "Y" else False
 
-    main(start_time, end_time)
+    main(start_time, end_time, chunk_minutes=1)
