@@ -52,6 +52,17 @@ jobs:
         cd twitter_user  
         python ./collect_executor.py
 
+    - name: Upload Twitter log file
+      uses: actions/upload-artifact@v2
+      with:
+        name: twitter-log
+        path: ./log/twitter.log
+        
+    - name: Download Twitter log file
+      uses: actions/download-artifact@v2
+      with:
+        name: twitter-log
+
   upload_artifact:
     needs: data_collection
     runs-on: ubuntu-latest
