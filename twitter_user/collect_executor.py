@@ -165,10 +165,11 @@ def main():
     for keywords in get_amazon_product(50, 0):
         for keyword in keywords:
             response = get_info_from_twitter_api(keyword)
-            tweet_generator = generate_tweet_data(response, keyword)
-            user_generator = generate_tweet_user(response, keyword)
+            if isinstance(response, dict) and "results" in response.keys():
+                tweet_generator = generate_tweet_data(response, keyword)
+                user_generator = generate_tweet_user(response, keyword)
 
-            save_tweet_info(tweet_generator, user_generator)
+                save_tweet_info(tweet_generator, user_generator)
 
 
 if __name__ == "__main__":
