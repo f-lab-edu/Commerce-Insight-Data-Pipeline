@@ -218,7 +218,7 @@ if __name__ == "__main__":
     #     start_time,
     # )
 
-    end_time = start_time + timedelta(minutes=10)
+    end_time = start_time + timedelta(minutes=2)
     # end_time = end_time.astimezone(korea_tz)
 
     # end_time = get_input_time(
