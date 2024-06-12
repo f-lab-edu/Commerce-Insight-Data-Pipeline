@@ -171,7 +171,7 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
             else:
                 logger.error("페이지를 가져올 수 없습니다.")
 
-        elapsed_time = datetime.now(korea_tz) - chunk_start_time
+        elapsed_time = datetime.now() - chunk_start_time
         remaining_time = timedelta(minutes=chunk_minutes) - elapsed_time
         if remaining_time > timedelta(seconds=0):
             logger.info(f"Sleeping for {remaining_time} until the next chunk.")
