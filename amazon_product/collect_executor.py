@@ -116,7 +116,9 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
     logger.info(f"Start.. current time: {current_time}, end time: {end_time} ")
     while True:
         if current_time >= end_time:
-            logger.info("Data collection has reached the end time.")
+            logger.info(
+                f"Data collection has reached the end time. {current_time}, end time: {end_time} "
+            )
             break
 
         html = get_page(amazon_best_seller_url, headers, logger)
