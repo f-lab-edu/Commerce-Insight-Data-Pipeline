@@ -211,7 +211,7 @@ def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
 
 
 if __name__ == "__main__":
-    start_time = korea_tz.localize(datetime.now())
+    start_time = datetime.now()
     # start_time = get_input_time(
     #     "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
     #     korea_tz,
@@ -219,7 +219,7 @@ if __name__ == "__main__":
     # )
 
     end_time = start_time + timedelta(minutes=10)
-    end_time = end_time.astimezone(korea_tz)
+    # end_time = end_time.astimezone(korea_tz)
 
     # end_time = get_input_time(
     #     "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
