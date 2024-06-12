@@ -176,6 +176,7 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
         if remaining_time > timedelta(seconds=0):
             logger.info(f"Sleeping for {remaining_time} until the next chunk.")
             time.sleep(remaining_time.total_seconds())
+        current_time = datetime.now()
 
 
 def save_amazon_product(amazon_generator):
