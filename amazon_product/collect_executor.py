@@ -96,6 +96,7 @@ def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
     }
+    current_time = datetime.now(korea_tz)
 
     log_dir = "../log"
     os.makedirs(log_dir, exist_ok=True)
@@ -113,9 +114,8 @@ def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
     logger = logging.getLogger()
     logger.setLevel(logging.DEBUG)
     logger.addHandler(handler)
-
+    logger.info(f"Start.. current time: {current_time}, end time: {end_time} ")
     while True:
-        current_time = datetime.now(korea_tz)
         if current_time >= end_time:
             logger.info("Data collection has reached the end time.")
             break
