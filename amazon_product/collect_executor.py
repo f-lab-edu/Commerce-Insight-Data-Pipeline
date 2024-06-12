@@ -89,14 +89,13 @@ def extract_product_info(html):
     return product_list
 
 
-def get_amazon_best_sellers(start_time, end_time, chunk_minutes=1):
+def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
     amazon_url = "https://www.amazon.com"
     amazon_best_seller_url = "https://www.amazon.com/Best-Sellers/zgbs"
 
     headers = {
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
     }
-    current_time = datetime.now(tz=korea_tz)
 
     log_dir = "../log"
     os.makedirs(log_dir, exist_ok=True)
