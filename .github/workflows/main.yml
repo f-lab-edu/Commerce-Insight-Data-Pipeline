@@ -42,11 +42,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Amazon data collection
+    - name: Run data collection
       run: |
-        python src/amazon_product/collect_executor.py
+        python src/main.py
 
-    - name: Upload Amazon log file
+    - name: Upload log file
       uses: actions/upload-artifact@v2
       with:
         name: amazon-log
@@ -56,10 +56,6 @@ jobs:
       uses: actions/download-artifact@v2
       with:
         name: amazon-log
-        
-    - name: Run Twitter data collection
-      run: |
-        python src/twitter_user/collect_executor.py
 
     - name: Upload Twitter log file
       uses: actions/upload-artifact@v2

@@ -100,7 +100,3 @@ def main():
                 user_generator = generate_tweet_user(response, keyword)
 
                 save_tweet_info(tweet_generator, user_generator)
-
-
-if __name__ == "__main__":
-    main()
