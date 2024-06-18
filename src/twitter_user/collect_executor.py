@@ -1,62 +1,10 @@
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
 import requests
 import logging
 from logging.handlers import RotatingFileHandler
 import os
-
-# from datetime import datetime, timedelta
-# import pytz
-import sys
-
-sys.path.append("../")
-from amazon_product.collect_executor import AmazonProduct
+from src.models.db_table import TweetInfo, TweetUser, AmazonProduct
+from src.database import session
 import time
-
-local_path = "sqlite:///../tweet_info.db"
-engine = create_engine(local_path, echo=True)
-Base = declarative_base()
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
-
-
-class TweetInfo(Base):
-    __tablename__ = "tweet_info"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    tweet_id = Column(String)
-    tweet_text = Column(String)
-    tweet_created_at = Column(String)
-    tweet_language = Column(String)
-    tweet_favorite_count = Column(Integer)
-    tweet_retweet_count = Column(Integer)
-    tweet_reply_count = Column(Integer)
-    tweet_quote_count = Column(Integer)
-    tweet_retweet = Column(String)
-    tweet_timestamp = Column(String)
-    hashtag = Column(String)
-    tweet_views = Column(Integer)
-
-
-class TweetUser(Base):
-    __tablename__ = "user_info"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    hashtag = Column(String)
-    user_id = Column(String)
-    user_created_at = Column(String)
-    username = Column(String)
-    name = Column(String)
-    user_follower_count = Column(Integer)
-    user_following_count = Column(Integer)
-    user_is_private = Column(String)
-    user_is_verified = Column(String)
-    user_location = Column(String)
-    user_description = Column(String)
-    user_external_url = Column(String)
-    user_number_of_tweets = Column(Integer)
-    user_bot = Column(String)
-    user_timestamp = Column(String)
 
 
 def get_info_from_twitter_api(hashtag):

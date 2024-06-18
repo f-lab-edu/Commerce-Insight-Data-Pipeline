@@ -1,6 +1,3 @@
-from sqlalchemy import create_engine, Column, Integer, String
-from sqlalchemy.ext.declarative import declarative_base
-from sqlalchemy.orm import sessionmaker
 import requests
 import re
 import time
@@ -8,27 +5,9 @@ from bs4 import BeautifulSoup
 import logging
 from logging.handlers import RotatingFileHandler
 from datetime import datetime, timedelta
-import pytz
 import os
-
-korea_tz = pytz.timezone("Asia/Seoul")
-docker_path = "sqlite:////amazon_product/amazon_product.db"
-local_path = "sqlite:///../tweet_info.db"
-engine = create_engine(local_path, echo=True)
-Base = declarative_base()
-Base.metadata.create_all(engine)
-Session = sessionmaker(bind=engine)
-session = Session()
-
-
-class AmazonProduct(Base):
-    __tablename__ = "amazon_product"
-    id = Column(Integer, primary_key=True, autoincrement=True)
-    product_name = Column(String)
-    price = Column(String)
-    rating = Column(String)
-    review_count = Column(String)
-    url = Column(String)
+from src.models.db_table import AmazonProduct
+from src.database import session
 
 
 def get_page(url, headers, logger):
@@ -213,22 +192,5 @@ def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
 
 if __name__ == "__main__":
     start_time = datetime.now()
-    # start_time = get_input_time(
-    #     "(amazon) 시작 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
-    #     korea_tz,
-    #     start_time,
-    # )
-
-    end_time = start_time + timedelta(minutes=2)
-    # end_time = end_time.astimezone(korea_tz)
-
-    # end_time = get_input_time(
-    #     "(amazon) 끝 시간을 입력하세요 (YYYY-MM-DD HH:MM:SS): ",
-    #     korea_tz,
-    #     end_time,
-    # )
-
-    # replace_str = input("replace 하십니까? Y/N: ")
-    # replace = True if replace_str == "Y" else False
-
+    end_time = start_time + timedelta(minutes=1)
     main(start_time, end_time, chunk_minutes=1)

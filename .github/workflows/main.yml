@@ -19,6 +19,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run DB initialization script
       run: |
+        cd src
         python ./db_init.py
 
     - name: Upload db log file
@@ -44,7 +45,7 @@ jobs:
 
     - name: Run Amazon data collection
       run: |
-        cd amazon_product
+        cd src/amazon_product
         python ./collect_executor.py
 
     - name: Upload Amazon log file
@@ -60,7 +61,7 @@ jobs:
         
     - name: Run Twitter data collection
       run: |
-        cd twitter_user  
+        cd src/twitter_user  
         python ./collect_executor.py
 
     - name: Upload Twitter log file
