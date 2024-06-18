@@ -73,7 +73,7 @@ CREATE TABLE user_info (
 """
 
 # 현재 경로에 tweet_info.db 파일이 존재하는지 확인
-db_file = "./tweet_info.db"
+db_file = "../tweet_info.db"
 
 if not os.path.exists(db_file):
     # tweet_info.db 파일이 없는 경우에만 테이블 생성
