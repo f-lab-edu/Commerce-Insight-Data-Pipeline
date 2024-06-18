@@ -44,8 +44,7 @@ jobs:
 
     - name: Run Amazon data collection
       run: |
-        cd src/amazon_product
-        python ./collect_executor.py
+        python src/amazon_product/collect_executor.py
 
     - name: Upload Amazon log file
       uses: actions/upload-artifact@v2
@@ -60,8 +59,7 @@ jobs:
         
     - name: Run Twitter data collection
       run: |
-        cd src/twitter_user  
-        python ./collect_executor.py
+        python src/twitter_user/collect_executor.py
 
     - name: Upload Twitter log file
       uses: actions/upload-artifact@v2
