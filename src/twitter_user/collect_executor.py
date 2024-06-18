@@ -1,10 +1,8 @@
 import requests
-import logging
-from logging.handlers import RotatingFileHandler
-import os
+import time
 from src.models.db_table import TweetInfo, TweetUser, AmazonProduct
 from src.database import session
-import time
+from src.log import twitter_logger as logger
 
 
 def get_info_from_twitter_api(hashtag):
@@ -73,22 +71,6 @@ def save_tweet_info(tweet_generator, user_generator):
 
 
 def get_amazon_product(batch_size, offset):
-    log_dir = "../log"
-    log_file = os.path.join(log_dir, "twitter.log")
-    max_file_size = 1024 * 1024 * 10  # 10MB
-    backup_count = 5
-
-    handler = RotatingFileHandler(
-        log_file, maxBytes=max_file_size, backupCount=backup_count
-    )
-    handler.setLevel(logging.DEBUG)
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    handler.setFormatter(formatter)
-
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    logger.addHandler(handler)
-
     while True:
         pn = (
             session.query(AmazonProduct.product_name)

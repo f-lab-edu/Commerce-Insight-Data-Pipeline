@@ -2,10 +2,8 @@ import requests
 import re
 import time
 from bs4 import BeautifulSoup
-import logging
-from logging.handlers import RotatingFileHandler
 from datetime import datetime, timedelta
-import os
+from src.log import amazon_logger as logger
 from src.models.db_table import AmazonProduct
 from src.database import session
 
@@ -76,22 +74,6 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
         "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36"
     }
 
-    log_dir = "../log"
-    os.makedirs(log_dir, exist_ok=True)
-    log_file = os.path.join(log_dir, "amazon_product.log")
-    max_file_size = 1024 * 1024 * 10  # 10MB
-    backup_count = 5
-
-    handler = RotatingFileHandler(
-        log_file, maxBytes=max_file_size, backupCount=backup_count
-    )
-    handler.setLevel(logging.DEBUG)
-    formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-    handler.setFormatter(formatter)
-
-    logger = logging.getLogger()
-    logger.setLevel(logging.DEBUG)
-    logger.addHandler(handler)
     logger.info(f"Start.. current time: {current_time}, end time: {end_time} ")
     while True:
         if current_time >= end_time:
