@@ -1,0 +1,40 @@
+version: '3'
+services:
+  amazon_product:
+    build:
+      context: ./amazon_product
+      dockerfile: Dockerfile
+    volumes:
+      - ./amazon_product:/amazon_product
+      - ./log:/log
+      - ./tweet_info.db:/amazon_product/amazon_product.db 
+    command: >
+      sh -c "
+        python upload_sqlite_db.py
+      "
+    container_name: cidp_amazon_product
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  twitter_user:
+    build:
+      context: ./twitter_user
+      dockerfile: Dockerfile
+    volumes:
+      - ./twitter_user:/twitter_user
+      - ./log:/log
+      - ./tweet_info.db:/twitter_user/tweet_info.db 
+    command: >
+      sh -c "
+        python upload_sqlite_db.py
+      "
+    container_name: cidp_twitter_user
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+    
