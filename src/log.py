@@ -2,7 +2,7 @@ import logging
 from logging.handlers import RotatingFileHandler
 import os
 
-log_dir = "../../log"
+log_dir = "./log"
 os.makedirs(log_dir, exist_ok=True)
 max_file_size = 1024 * 1024 * 10  # 10MB
 backup_count = 5

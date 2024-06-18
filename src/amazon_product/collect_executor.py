@@ -4,6 +4,8 @@ import time
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from src.log import amazon_logger as logger
+
+logger.info("This is an info message")
 from src.models.db_table import AmazonProduct
 from src.database import session
 
