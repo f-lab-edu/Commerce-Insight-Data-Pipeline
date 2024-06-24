@@ -71,6 +71,7 @@ def save_tweet_info(tweet_generator, user_generator):
 
 
 def get_amazon_product(batch_size, offset):
+    idx = 0
     while True:
         pn = (
             session.query(AmazonProduct.product_name)
@@ -81,6 +82,13 @@ def get_amazon_product(batch_size, offset):
         if not pn:
             logger.info("No more products to fetch.")
             break
+        if idx == 5:
+            logger.info("There's no products. (5/5)")
+
+        if offset == 0 and not pn:
+            logger.info("There's no products yet..")
+            time.sleep(5)
+            idx += 1
 
         logger.info(f"Next batch: {len(pn)}..")
         keywords = [product_name[0] for product_name in pn]
@@ -100,3 +108,7 @@ def main():
                 user_generator = generate_tweet_user(response, keyword)
 
                 save_tweet_info(tweet_generator, user_generator)
+
+
+if __name__ == "__main__":
+    main()

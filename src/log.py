@@ -1,3 +1,6 @@
+import sys
+
+sys.path.append(".")
 import logging
 from logging.handlers import RotatingFileHandler
 import os
