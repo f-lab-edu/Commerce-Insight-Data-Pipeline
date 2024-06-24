@@ -4,8 +4,10 @@
 트위터 인플루언서의 트윗이 아마존 제품 판매에 미치는 영향 분석을 위한 데이터 파이프라인을 구축한 리포지토리입니다.
 
 ### 실행방법
+```
 python src/db_init.py
 python src/main.py
+```
 
 *reference*
 1. [트위터 API](https://rapidapi.com/omarmhaimdat/api/twitter154)
