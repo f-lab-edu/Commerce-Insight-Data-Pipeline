@@ -18,7 +18,7 @@ dataset = client.create_dataset(dataset, exists_ok=True)
 
 # 테이블 스키마 정의
 amazon_product_schema = [
-    bigquery.SchemaField("id", "INTEGER", mode="REQUIRED"),
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
     bigquery.SchemaField("product_name", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("price", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("rating", "STRING", mode="NULLABLE"),
@@ -27,7 +27,7 @@ amazon_product_schema = [
 ]
 
 tweet_info_schema = [
-    bigquery.SchemaField("id", "INTEGER", mode="REQUIRED"),
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
     bigquery.SchemaField("tweet_id", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("tweet_text", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("tweet_created_at", "STRING", mode="NULLABLE"),
@@ -43,7 +43,7 @@ tweet_info_schema = [
 ]
 
 user_info_schema = [
-    bigquery.SchemaField("id", "INTEGER", mode="REQUIRED"),
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
     bigquery.SchemaField("hashtag", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("user_id", "STRING", mode="NULLABLE"),
     bigquery.SchemaField("user_created_at", "STRING", mode="NULLABLE"),
@@ -66,14 +66,13 @@ user_info_schema = [
 def create_table_if_not_exists(table_id, schema):
     table_ref = client.dataset(dataset_id).table(table_id)
     try:
-        client.get_table(table_ref)
+        table = client.get_table(table_ref)
         print(
             f"테이블이 이미 존재합니다: {table_ref.project}.{table_ref.dataset_id}.{table_ref.table_id}"
         )
-        table = bigquery.Table(table_ref, schema=schema)
     except exceptions.NotFound:
         table = bigquery.Table(table_ref, schema=schema)
-        client.create_table(table)
+        table = client.create_table(table)
         print(f"테이블 생성 완료: {table.project}.{table.dataset_id}.{table.table_id}")
     return table
 

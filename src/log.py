@@ -14,7 +14,7 @@ backup_count = 5
 def make_logger(filename):
     log_file = os.path.join(log_dir, filename)
     handler = RotatingFileHandler(
-        log_file, maxBytes=max_file_size, backupCount=backup_count
+        log_file, maxBytes=max_file_size, backupCount=backup_count, encoding="utf-8"
     )
     handler.setLevel(logging.DEBUG)
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")

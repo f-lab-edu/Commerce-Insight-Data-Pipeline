@@ -5,6 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from src.log import amazon_logger as logger
 from src.db_init import client, amazon_product_table
+import uuid
 
 
 def get_page(url, headers, logger):
@@ -121,6 +122,7 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
                     logger.info(f"리뷰 수: {product['review_count']}")
 
                     amazon_product = {
+                        "id": str(uuid.uuid4()),
                         "product_name": product["product_name"],
                         "price": product["price"],
                         "rating": product["rating"],
@@ -141,11 +143,11 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
 
 def save_amazon_product(amazon_generator):
     for amazon_product in amazon_generator:
-        errors = client.insert_rows_json(amazon_product_table, amazon_product)
+        errors = client.insert_rows_json(amazon_product_table, [amazon_product])
         if not errors:
-            print("데이터가 성공적으로 삽입되었습니다.")
+            logger.info("데이터가 성공적으로 삽입되었습니다.")
         else:
-            print("데이터 삽입 중 오류가 발생했습니다:", errors)
+            logger.error("데이터 삽입 중 오류가 발생했습니다:", errors)
 
 
 def main(start_time, end_time, chunk_minutes=1, replace=False):
