@@ -1,7 +1,7 @@
 from google.cloud import bigquery
 from google.api_core import exceptions
 
-key_path = "C:/Users/Haerin/Desktop/dataengineer/teak-kit-424413-m1-b3f5816fcc56.json"
+key_path = "../../teak-kit-424413-m1-b3f5816fcc56.json"
 
 # BigQuery 클라이언트 생성
 client = bigquery.Client.from_service_account_json(key_path)
