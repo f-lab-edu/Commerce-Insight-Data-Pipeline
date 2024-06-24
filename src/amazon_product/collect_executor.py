@@ -4,10 +4,7 @@ import time
 from bs4 import BeautifulSoup
 from datetime import datetime, timedelta
 from src.log import amazon_logger as logger
-
-logger.info("This is an info message")
-from src.models.db_table import AmazonProduct
-from src.database import session
+from src.db_init import client, amazon_product_table
 
 
 def get_page(url, headers, logger):
@@ -144,9 +141,11 @@ def get_amazon_best_sellers(current_time, end_time, chunk_minutes=1):
 
 def save_amazon_product(amazon_generator):
     for amazon_product in amazon_generator:
-        amazon = AmazonProduct(**amazon_product)
-        session.add(amazon)
-        session.commit()
+        errors = client.insert_rows_json(amazon_product_table, amazon_product)
+        if not errors:
+            print("데이터가 성공적으로 삽입되었습니다.")
+        else:
+            print("데이터 삽입 중 오류가 발생했습니다:", errors)
 
 
 def main(start_time, end_time, chunk_minutes=1, replace=False):

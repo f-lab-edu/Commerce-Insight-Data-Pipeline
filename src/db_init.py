@@ -70,13 +70,17 @@ def create_table_if_not_exists(table_id, schema):
         print(
             f"테이블이 이미 존재합니다: {table_ref.project}.{table_ref.dataset_id}.{table_ref.table_id}"
         )
+        table = bigquery.Table(table_ref, schema=schema)
     except exceptions.NotFound:
         table = bigquery.Table(table_ref, schema=schema)
         client.create_table(table)
         print(f"테이블 생성 완료: {table.project}.{table.dataset_id}.{table.table_id}")
+    return table
 
 
 # 테이블 생성 함수 호출
-create_table_if_not_exists(amazon_product_table_id, amazon_product_schema)
-create_table_if_not_exists(tweet_info_table_id, tweet_info_schema)
-create_table_if_not_exists(user_info_table_id, user_info_schema)
+amazon_product_table = create_table_if_not_exists(
+    amazon_product_table_id, amazon_product_schema
+)
+tweet_info_table = create_table_if_not_exists(tweet_info_table_id, tweet_info_schema)
+user_info_table = create_table_if_not_exists(user_info_table_id, user_info_schema)
