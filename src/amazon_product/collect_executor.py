@@ -172,3 +172,9 @@ def get_input_time(prompt, timezone, default_time=None, max_attempts=3):
             else:
                 print("입력 횟수를 초과했습니다. 기본값을 사용합니다.")
                 return default_time
+
+
+if __name__ == "__main__":
+    start_time = datetime.now()
+    end_time = start_time + timedelta(minutes=1)
+    main(start_time, end_time, chunk_minutes=1)
