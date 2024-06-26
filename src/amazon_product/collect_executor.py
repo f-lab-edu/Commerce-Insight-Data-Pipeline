@@ -145,9 +145,9 @@ def save_amazon_product(amazon_generator):
     for amazon_product in amazon_generator:
         errors = client.insert_rows_json(amazon_product_table, [amazon_product])
         if not errors:
-            logger.info("데이터가 성공적으로 삽입되었습니다.")
+            logger.info("아마존 데이터가 성공적으로 삽입되었습니다.")
         else:
-            logger.error("데이터 삽입 중 오류가 발생했습니다:", errors)
+            logger.error("아마존 데이터 삽입 중 오류가 발생했습니다:", errors)
 
 
 def main(start_time, end_time, chunk_minutes=1, replace=False):
