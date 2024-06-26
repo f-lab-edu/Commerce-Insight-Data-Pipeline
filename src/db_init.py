@@ -1,91 +1,85 @@
-import sqlite3
-import os
-import logging
-from logging.handlers import RotatingFileHandler
+from google.cloud import bigquery
+from google.api_core import exceptions
 
-log_dir = "./log"
-os.makedirs(log_dir, exist_ok=True)
-log_file = os.path.join(log_dir, "db_init.log")
+key_path = "../../teak-kit-424413-m1-b3f5816fcc56.json"
 
-max_file_size = 1024 * 1024 * 10  # 10MB
-backup_count = 5
+# BigQuery 클라이언트 생성
+client = bigquery.Client.from_service_account_json(key_path)
 
-handler = RotatingFileHandler(
-    log_file, maxBytes=max_file_size, backupCount=backup_count
+# 데이터셋 및 테이블 ID 설정
+dataset_id = "cidp"
+amazon_product_table_id = "amazon_product"
+tweet_info_table_id = "tweet_info"
+user_info_table_id = "user_info"
+
+# 데이터셋 생성 (이미 존재하는 경우 건너뜀)
+dataset = bigquery.Dataset(f"{client.project}.{dataset_id}")
+dataset = client.create_dataset(dataset, exists_ok=True)
+
+# 테이블 스키마 정의
+amazon_product_schema = [
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("product_name", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("price", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("rating", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("review_count", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("url", "STRING", mode="NULLABLE"),
+]
+
+tweet_info_schema = [
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("tweet_id", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_text", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_created_at", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_language", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_favorite_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_retweet_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_reply_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_quote_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_retweet", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_timestamp", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("hashtag", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("tweet_views", "INTEGER", mode="NULLABLE"),
+]
+
+user_info_schema = [
+    bigquery.SchemaField("id", "STRING", mode="REQUIRED"),
+    bigquery.SchemaField("hashtag", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_id", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_created_at", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("username", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("name", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_follower_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("user_following_count", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("user_is_private", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_is_verified", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_location", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_description", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_external_url", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_number_of_tweets", "INTEGER", mode="NULLABLE"),
+    bigquery.SchemaField("user_bot", "STRING", mode="NULLABLE"),
+    bigquery.SchemaField("user_timestamp", "STRING", mode="NULLABLE"),
+]
+
+
+# 테이블 존재 여부 확인 및 생성
+def create_table_if_not_exists(table_id, schema):
+    table_ref = client.dataset(dataset_id).table(table_id)
+    try:
+        table = client.get_table(table_ref)
+        print(
+            f"테이블이 이미 존재합니다: {table_ref.project}.{table_ref.dataset_id}.{table_ref.table_id}"
+        )
+    except exceptions.NotFound:
+        table = bigquery.Table(table_ref, schema=schema)
+        table = client.create_table(table)
+        print(f"테이블 생성 완료: {table.project}.{table.dataset_id}.{table.table_id}")
+    return table
+
+
+# 테이블 생성 함수 호출
+amazon_product_table = create_table_if_not_exists(
+    amazon_product_table_id, amazon_product_schema
 )
-handler.setLevel(logging.DEBUG)
-formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
-handler.setFormatter(formatter)
-
-logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
-logger.addHandler(handler)
-
-# SQL 문 준비
-create_amazon_product_table = """
-CREATE TABLE amazon_product (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    product_name TEXT,
-    price TEXT,
-    rating TEXT,
-    review_count TEXT,
-    url TEXT
-);
-"""
-
-create_tweet_info_table = """
-CREATE TABLE tweet_info (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    tweet_id TEXT,
-    tweet_text TEXT,
-    tweet_created_at TEXT,
-    tweet_language TEXT,
-    tweet_favorite_count INTEGER,
-    tweet_retweet_count INTEGER,
-    tweet_reply_count INTEGER,
-    tweet_quote_count INTEGER,
-    tweet_retweet TEXT,
-    tweet_timestamp TEXT,
-    hashtag TEXT,
-    tweet_views INTEGER
-);
-"""
-
-create_user_info_table = """
-CREATE TABLE user_info (
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    hashtag TEXT,
-    user_id TEXT,
-    user_created_at TEXT,
-    username TEXT,
-    name TEXT,
-    user_follower_count INTEGER,
-    user_following_count INTEGER,
-    user_is_private TEXT,
-    user_is_verified TEXT,
-    user_location TEXT,
-    user_description TEXT,
-    user_external_url TEXT,
-    user_number_of_tweets INTEGER,
-    user_bot TEXT,
-    user_timestamp TEXT
-);
-"""
-
-# 현재 경로에 tweet_info.db 파일이 존재하는지 확인
-db_file = "./tweet_info.db"
-
-if not os.path.exists(db_file):
-    # tweet_info.db 파일이 없는 경우에만 테이블 생성
-    conn = sqlite3.connect(db_file)
-    cursor = conn.cursor()
-
-    cursor.execute(create_amazon_product_table)
-    cursor.execute(create_tweet_info_table)
-    cursor.execute(create_user_info_table)
-
-    conn.commit()
-    conn.close()
-    logger.info("tweet_info.db was created, and the table was initialized.")
-else:
-    logger.info("tweet_info.db already exists.")
+tweet_info_table = create_table_if_not_exists(tweet_info_table_id, tweet_info_schema)
+user_info_table = create_table_if_not_exists(user_info_table_id, user_info_schema)
